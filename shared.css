@@ -1,78 +1,78 @@
 /* === V Rising Guides Shared Styles === */
 
 :root {
-  --bg: #faf8f6;
-  --surface: #ffffff;
-  --border: #d8d4cc;
-  --text: #2c2420;
-  --text2: #5f5550;
-  --text3: #8a8278;
-  --muted-bg: #f5f3ed;
-  --hero-bg1: #fce8e8;
-  --hero-bg2: #fdf3e0;
-  --green: #8b1a1a;
-  --green-l: #fce8e8;
-  --green-d: #5c0a0a;
-  --gold: #b8860b;
-  --gold-l: #fdf3e0;
-  --blue: #185fa5;
-  --blue-l: #e6f1fb;
-  --blue-d: #0c447c;
-  --red: #a32d2d;
-  --red-l: #fcebeb;
-  --purple: #534ab7;
-  --purple-l: #eeedfe;
-  --nav-bg: #ffffff;
-  --footer-bg: #2c2420;
-  --footer-text: #a8a498;
+  --bg: #1a1a18;
+  --surface: #252522;
+  --border: #3d3d38;
+  --text: #e0dcd0;
+  --text2: #a8a498;
+  --text3: #7a7668;
+  --muted-bg: #2d2d28;
+  --hero-bg1: #2a1818;
+  --hero-bg2: #2a2014;
+  --green: #d94a4a;
+  --green-l: #2a1818;
+  --green-d: #e8a0a0;
+  --gold: #d4a050;
+  --gold-l: #2a2014;
+  --blue: #4a90d9;
+  --blue-l: #1a2432;
+  --blue-d: #a0c8f0;
+  --red: #d94a4a;
+  --red-l: #2a1818;
+  --purple: #7b6fd4;
+  --purple-l: #1e1c32;
+  --nav-bg: #252522;
+  --footer-bg: #111110;
+  --footer-text: #7a7668;
   --footer-link: #d4a888;
-  --topbar-bg: #2c2420;
-  --topbar-text: #e8e4d8;
+  --topbar-bg: #111110;
+  --topbar-text: #a8a498;
   --radius: 10px;
   --radius-sm: 6px;
-  --table-hover: #faf8f0;
-  --thead-bg: #f5f3ed;
-  --copy-bg: #eaf3de;
-  --copy-hover: #d4e8b8;
-  --toggle-bg: #f5f3ed;
-  --toggle-border: #d8d4c8;
+  --table-hover: #2d2d28;
+  --thead-bg: #2d2d28;
+  --copy-bg: #2a1818;
+  --copy-hover: #3a2020;
+  --toggle-bg: #2d2d28;
+  --toggle-border: #3d3d38;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --bg: #1a1a18;
-    --surface: #252522;
-    --border: #3d3d38;
-    --text: #e0dcd0;
-    --text2: #a8a498;
-    --text3: #7a7668;
-    --muted-bg: #2d2d28;
-    --hero-bg1: #2a1818;
-    --hero-bg2: #2a2014;
-    --green: #d94a4a;
-    --green-l: #2a1818;
-    --green-d: #e8a0a0;
-    --gold: #d4a050;
-    --gold-l: #2a2014;
-    --blue: #4a90d9;
-    --blue-l: #1a2432;
-    --blue-d: #a0c8f0;
-    --red: #d94a4a;
-    --red-l: #2a1818;
-    --purple: #7b6fd4;
-    --purple-l: #1e1c32;
-    --nav-bg: #252522;
-    --footer-bg: #111110;
-    --footer-text: #7a7668;
+    --bg: #faf8f6;
+    --surface: #ffffff;
+    --border: #d8d4cc;
+    --text: #2c2420;
+    --text2: #5f5550;
+    --text3: #8a8278;
+    --muted-bg: #f5f3ed;
+    --hero-bg1: #fce8e8;
+    --hero-bg2: #fdf3e0;
+    --green: #8b1a1a;
+    --green-l: #fce8e8;
+    --green-d: #5c0a0a;
+    --gold: #b8860b;
+    --gold-l: #fdf3e0;
+    --blue: #185fa5;
+    --blue-l: #e6f1fb;
+    --blue-d: #0c447c;
+    --red: #a32d2d;
+    --red-l: #fcebeb;
+    --purple: #534ab7;
+    --purple-l: #eeedfe;
+    --nav-bg: #ffffff;
+    --footer-bg: #2c2420;
+    --footer-text: #a8a498;
     --footer-link: #d4a888;
-    --topbar-bg: #111110;
-    --topbar-text: #a8a498;
-    --table-hover: #2d2d28;
-    --thead-bg: #2d2d28;
-    --copy-bg: #1e2a14;
-    --copy-hover: #253a16;
-    --toggle-bg: #2d2d28;
-    --toggle-border: #3d3d38;
+    --topbar-bg: #2c2420;
+    --topbar-text: #e8e4d8;
+    --table-hover: #faf8f0;
+    --thead-bg: #f5f3ed;
+    --copy-bg: #fce8e8;
+    --copy-hover: #f8d8d8;
+    --toggle-bg: #f5f3ed;
+    --toggle-border: #d8d4c8;
   }
 }
 
@@ -168,6 +168,10 @@ nav { background: var(--nav-bg); border-bottom: 1px solid var(--border); positio
 .nav-inner { max-width: 1100px; margin: 0 auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
 .logo { font-size: 20px; font-weight: 700; color: var(--green); text-decoration: none; }
 .logo span { color: var(--gold); }
+
+/* Glow effects */
+.glow { text-shadow: 0 0 20px rgba(217,74,74,0.35); }
+.glow-strong { text-shadow: 0 0 30px rgba(217,74,74,0.5), 0 0 60px rgba(217,74,74,0.2); }
 .nav-right { display: flex; align-items: center; gap: 16px; }
 .nav-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
 .nav-links a { color: var(--text2); text-decoration: none; font-size: 14px; font-weight: 500; }
