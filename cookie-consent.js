@@ -2,8 +2,8 @@
 (function() {
   'use strict';
 
-  var SITE_URL = 'palworldguides.com';
-  var GA_ID = 'G-8T3TKL3W4T';
+  var SITE_URL = 'vrisingguides.com';
+  var GA_ID = 'G-RRFDL6T16D';
 
   function getCookie(name) {
     var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
@@ -29,7 +29,7 @@
     window.gtag = gtag;
   }
 
-  var consent = getCookie('palguide-consent');
+  var consent = getCookie('vrising-guide-consent');
   if (consent === 'accepted') {
     loadAnalytics();
   } else if (consent !== 'declined') {
@@ -48,13 +48,13 @@
     document.body.appendChild(banner);
 
     document.getElementById('cookieAccept').addEventListener('click', function() {
-      setCookie('palguide-consent', 'accepted', 365);
+      setCookie('vrising-guide-consent', 'accepted', 365);
       banner.style.display = 'none';
       loadAnalytics();
     });
 
     document.getElementById('cookieDecline').addEventListener('click', function() {
-      setCookie('palguide-consent', 'declined', 365);
+      setCookie('vrising-guide-consent', 'declined', 365);
       banner.style.display = 'none';
     });
   }
