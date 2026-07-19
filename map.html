@@ -160,6 +160,49 @@
   <div class="hero-updated">Last updated: <time datetime="2026-07-19">July 19, 2026</time> — Patch 1.2 Invaders of Oakveil</div>
 </section>
 
+<!-- INTERACTIVE MAP LINK + REGION DIAGRAM -->
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
+
+  <!-- MapGenie external link card -->
+  <a href="https://vrising.mapgenie.io" target="_blank" rel="noopener" style="flex:1;min-width:200px;background:var(--card);border:1px solid var(--green);border-radius:8px;padding:16px 20px;text-decoration:none;display:flex;align-items:center;gap:12px;transition:background .2s;" onmouseover="this.style.background='var(--green-l)'" onmouseout="this.style.background='var(--card)'">
+    <span style="font-size:32px;">🗺️</span>
+    <div>
+      <strong style="display:block;color:var(--green);font-size:15px;">Open Interactive Map →</strong>
+      <span style="font-size:12px;color:var(--text2);">MapGenie — every waygate, boss, resource node, filterable & zoomable. Community-maintained, free.</span>
+    </div>
+  </a>
+
+  <!-- CSS Region Diagram -->
+  <div style="flex:1;min-width:300px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 20px;">
+    <p style="font-size:12px;color:var(--text2);margin:0 0 12px;text-align:center;">5 Regions of Vardoran</p>
+    <style>
+      .rmap { display:flex; flex-direction:column; align-items:center; gap:2px; font-size:11px; }
+      .rmap .row { display:flex; align-items:center; gap:4px; }
+      .rmap .box { border-radius:4px; padding:6px 10px; text-align:center; font-weight:600; min-width:90px; }
+      .rmap .box-n { background:var(--green); color:#111; }
+      .rmap .box-m { background:var(--green-l); color:var(--text); }
+      .rmap .arr { color:var(--text3); font-size:10px; }
+    </style>
+    <div class="rmap">
+      <div class="row">
+        <div class="box box-n" style="min-width:220px;">⬆ North: Gloomrot (GS 80-91) ⬆</div>
+      </div>
+      <div class="arr">↓ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ↓</div>
+      <div class="row">
+        <div class="box box-m">← W<br>Silverlight Hills<br>(GS 65-80)</div>
+        <div class="arr" style="font-size:14px;">→</div>
+        <div class="box box-n">Dunley Farmlands<br>(GS 20-50)<br>★ Central</div>
+        <div class="arr" style="font-size:14px;">←</div>
+        <div class="box box-m">E →<br>Cursed Forest<br>(GS 50-68)</div>
+      </div>
+      <div class="arr">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ↓</div>
+      <div class="row">
+        <div class="box box-m" style="min-width:220px;">⬇ South: Farbane Woods (GS 0-20) — Starting Area</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- QUICK ANSWER ZONE -->
 <section class="section" style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px 24px;margin-bottom:24px;">
   <h2 style="margin-top:0;font-size:18px;">⚡ In 30 Seconds: What You Need to Know About the Map</h2>
