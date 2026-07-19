@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://vrisingguides.com/</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://vrisingguides.com/boss-order.html</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/boss-order.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vrisingguides.com/best-weapons.html</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/blood-types.html</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/castle-building.html</loc><lastmod>2026-07-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://vrisingguides.com/beginner-guide.html</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/blood-types.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/castle-building.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/beginner-guide.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/resources.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/servants.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/progression.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/about.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://vrisingguides.com/contact.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vrisingguides.com/privacy.html</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://vrisingguides.com/terms.html</loc><lastmod>2026-07-10</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
 </urlset>
