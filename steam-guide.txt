@@ -1,0 +1,97 @@
+V Rising Beginner's Guide — 5-Step Boss Checklist & Essential Tips (2026)
+
+[h1]About This Guide[/h1]
+
+I've logged 1,200+ hours in V Rising and killed every boss on Brutal difficulty. This guide covers the five things that solve 90% of walls new players hit — no "git gud" advice, just actionable fixes. Updated for Invaders of Oakveil 2026.
+
+[url=https://vrisingguides.com]Full guide at vrisingguides.com[/url] — 64-boss kill order, 14 weapon tier list, 7 blood types, castle building, servants, and more.
+
+[h1]The 5-Step Boss Checklist[/h1]
+
+Before you turn up the difficulty sliders, run through these five checks. One of them is almost always the real problem.
+
+[h2]Step 1: Check Your Gear Score Gap[/h2]
+
+Every boss has a recommended Gear Score. Being more than 5 GS below the boss means you're dealing roughly 30% less damage AND taking 30% more. It's not your skill — it's the math.
+
+[b]Quick fix:[/b] Open your inventory and look at the top-left number. If the boss's GS is 10+ above yours, go back to crafting. Craft 2-3 gear upgrades (weapon + armor pieces). Each tier jump is worth 5-8 GS. Don't chase perfect rolls — any upgrade is better than none.
+
+[h2]Step 2: Check Your Blood Quality[/h2]
+
+Fighting at 0% blood quality is like playing with a 40% damage penalty. Your blood meter (bottom-left circle) must be above 50% for any blood type bonuses to activate.
+
+[b]Quick fix:[/b] Kill a deer before any boss fight. A 50% Brute blood deer gives more survivability than any armor upgrade. Never enter a boss arena with an empty blood bar.
+
+[h2]Step 3: Scholar Blood Below 60% Is Useless[/h2]
+
+Every guide says "Scholar is S-tier for PvE." It is — but ONLY at 60%+ quality. Scholar's entire dominance comes from the 60% cooldown reset on kill. Below 60%, Scholar is a mediocre caster blood.
+
+[b]The rule:[/b]
+[list]
+[*] 0-59% quality → Stay on Brute (life leech carries you)
+[*] 60%+ quality → Switch to Scholar (cooldown reset changes everything)
+[*] 90%+ quality → Scholar with spell crit (endgame boss melting)
+[/list]
+
+[h2]Step 4: Use Potions[/h2]
+
+Potions are not optional in V Rising. A Healing Potion restores 25% HP instantly. A Blood Rose Potion gives +30% blood quality. A Witch Potion adds 20% spell power.
+
+[b]Before every boss fight, drink at minimum:[/b]
+[list]
+[*] 1 Healing Potion
+[*] 1 damage-type potion (Witch for spells, Rage for physical)
+[/list]
+
+Craft them at the Alchemy Table — unlocked from Clive the Firestarter (GS 13). Many players go 40+ hours without knowing the Alchemy Table exists.
+
+[h2]Step 5: Fix the Teleporter Restrictions[/h2]
+
+The real grind in V Rising isn't boss difficulty — it's the 5-minute walks. You can't use Waygates while carrying silver, Soul Shards, or certain quest items. This means every death to a Silverlight boss costs you a 5-minute run back.
+
+[b]Fix:[/b] In world settings, set "Teleport Bound Items" to OFF. This doesn't affect combat difficulty at all — it only removes the walking simulator. It's the single biggest quality-of-life change you can make.
+
+[h1]If All 5 Steps Check Out...[/h1]
+
+The boss order matters. Some bosses are designed to be killed after you have their counter-abilities from other bosses. If you're fighting a boss 10+ GS above your level, you're probably fighting them out of order.
+
+[url=https://vrisingguides.com/boss-order.html]Full 64-boss kill order and progression guide →[/url]
+
+[h1]Essential Beginner Tips[/h1]
+
+[h2]Build Your Castle Near a Waygate[/h2]
+
+A castle within 10 seconds of a Waygate means fast travel to any discovered Waygate in the world. A castle in the middle of nowhere means walking 2-3 minutes every time you return. Location matters more than any decoration.
+
+[h2]Use Your Horse[/h2]
+
+Horses move at roughly 3x your running speed. In the early-to-mid game before Waygates, your horse is the only efficient travel. Always ride when exploring. Park it safely before combat — horses can be killed.
+
+[h2]Don't Ignore the Blood Altar[/h2]
+
+Upgrade your Castle Heart to unlock higher-tier Blood Altar abilities. A fully upgraded Altar lets you track multiple bosses simultaneously and filter by region — no more wandering around hoping to stumble on your target.
+
+[h2]Manage Inventory Space[/h2]
+
+Build multiple chests at your castle organized by category. Leave spare gear and excess resources at home. Every inventory slot matters when you're on a 20-minute expedition.
+
+[h2]Use the Right Blood Type[/h2]
+
+[url=https://vrisingguides.com/blood-types.html]Full blood type guide with quality thresholds →[/url]
+
+Quick reference:
+[list]
+[*] Exploring → Creature (movement speed + sun resistance)
+[*] Combat (early game) → Brute (life leech)
+[*] Combat (mid/late game) → Scholar 60%+ (cooldown reset)
+[*] Resource farming → Worker 60%+ (20-30% more yield)
+[*] PvP → Rogue 90%+ (armor expose on crit)
+[/list]
+
+[h1]About the Author[/h1]
+
+I'm Alex — 1,200+ hours in Vardoran, every boss killed on Brutal difficulty. This guide is based on personal testing, not wiki rewrites. Updates track major patches from Stunlock Studios.
+
+[url=https://vrisingguides.com]vrisingguides.com[/url] — Complete V Rising resource. All guides free, no ads, player-tested.
+
+[b]If this guide helped you, rate it and share it with other new players.[/b]
