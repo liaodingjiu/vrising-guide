@@ -177,6 +177,38 @@ nav { background: var(--nav-bg); border-bottom: 1px solid var(--border); positio
 .nav-links a { color: var(--text2); text-decoration: none; font-size: 14px; font-weight: 500; }
 .nav-links a:hover { color: var(--green); }
 
+/* Dropdown menu */
+.nav-more { position: relative; }
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0;
+  min-width: 160px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  list-style: none;
+}
+.nav-more:hover .nav-dropdown,
+.nav-more:focus-within .nav-dropdown {
+  display: block;
+}
+.nav-dropdown li { display: block; }
+.nav-dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.nav-dropdown li a:hover {
+  background: var(--muted-bg);
+  color: var(--green);
+}
+
 .theme-toggle {
   background: var(--toggle-bg);
   border: 1px solid var(--toggle-border);
