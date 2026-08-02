@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vrisingguides.com/data/schema/spell.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-02",
+  "description": "Core V Rising spells organized by school and role. Includes travel spells, basic spells, and ultimate abilities referenced across build guides. Not exhaustive — covers spells used in recommended builds.",
+  "schools": ["blood", "chaos", "frost", "illusion", "unholy"],
+  "spells": {
+    "travel": [
+      {
+        "id": "veil-of-blood",
+        "name": "Veil of Blood",
+        "school": "blood",
+        "role": "travel",
+        "description": "Dash through enemies, healing on contact",
+        "bestFor": ["PvE sustain", "PvE Greatsword", "PvE Claw", "Summoner builds"],
+        "notes": "Best all-around travel spell for PvE. Heal + dash through enemies gives both mobility and sustain."
+      },
+      {
+        "id": "veil-of-chaos",
+        "name": "Veil of Chaos",
+        "school": "chaos",
+        "role": "travel",
+        "description": "Illusion dash that leaves a clone behind. Clone recasts your next spell.",
+        "bestFor": ["PvP engagment", "PvP Greatsword", "Double Chaos Volley combo"],
+        "notes": "Double cast Chaos Volley through clone for surprise burst. Best travel spell for PvP."
+      },
+      {
+        "id": "veil-of-frost",
+        "name": "Veil of Frost",
+        "school": "frost",
+        "role": "travel",
+        "description": "Dash leaving a trail of frost that slows enemies",
+        "bestFor": ["Chokepoint control", "PvP zoning"],
+        "notes": "Situationally useful for controlling chokepoints and creating space."
+      }
+    ],
+    "basic": [
+      {
+        "id": "chaos-volley",
+        "name": "Chaos Volley",
+        "school": "chaos",
+        "role": "ranged-damage",
+        "description": "Fire two projectiles dealing damage. Landing both does 15-20% of a player's HP in PvP.",
+        "bestFor": ["Ranged poke", "PvP pressure", "Boss pulling", "Greatsword builds", "Claw builds"],
+        "notes": "Most versatile basic spell. Ranged option for melee builds, pressure tool for PvP, boss puller for PvE."
+      },
+      {
+        "id": "sanguine-coil",
+        "name": "Sanguine Coil",
+        "school": "blood",
+        "role": "sustain",
+        "description": "Ranged projectile that heals you on hit",
+        "bestFor": ["PvE sustain", "Greatsword PvE", "Melee survival"],
+        "notes": "Heal on hit — essential for melee builds that take constant damage. Use between boss mechanics."
+      },
+      {
+        "id": "frost-barrier",
+        "name": "Frost Barrier",
+        "school": "frost",
+        "role": "defense",
+        "description": "Absorbs incoming damage and slows attackers",
+        "bestFor": ["PvP defense", "PvP Greatsword", "PvP Claw", "Counter-burst protection"],
+        "notes": "Pop before charging heavy or engaging. Absorbs their counter-burst and the slow gives you a free attack window."
+      },
+      {
+        "id": "raise-skeleton",
+        "name": "Raise Skeleton",
+        "school": "unholy",
+        "role": "summon",
+        "description": "Summon 2 permanent skeletons that tank for you",
+        "bestFor": ["Summoner builds", "PvE boss aggro management"],
+        "notes": "Core Summoner spell. Skeletons draw boss aggro and tank mechanics. Always keep these active."
+      },
+      {
+        "id": "summon-banshee",
+        "name": "Summon Banshee",
+        "school": "unholy",
+        "role": "summon",
+        "description": "Summon a ranged spellcaster that deals magic damage and applies slow",
+        "bestFor": ["Summoner builds", "Boss slowing"],
+        "notes": "Place 5-8 tiles behind skeletons. Projectiles slow enemies — against fast bosses, the slow is more valuable than her damage."
+      },
+      {
+        "id": "corpse-explosion",
+        "name": "Corpse Explosion",
+        "school": "unholy",
+        "role": "utility-aoe",
+        "description": "Detonate dead skeletons for burst AoE magic damage",
+        "bestFor": ["Summoner builds (alt)", "Bosses that kill skeletons frequently"],
+        "notes": "Optional alternative to Banshee. Turn skeleton deaths into damage."
+      }
+    ],
+    "ultimate": [
+      {
+        "id": "heart-strike",
+        "name": "Heart Strike",
+        "school": "blood",
+        "role": "finisher",
+        "description": "Massive single-target burst that heals you for damage dealt",
+        "bestFor": ["Greatsword builds", "Claw builds", "PvP kill confirm", "PvE burst windows"],
+        "notes": "Your finisher. Combined with charged heavy + Q, this deletes 20-30% of a boss HP bar in one window. In PvP, kills through most defensive spells."
+      },
+      {
+        "id": "army-of-the-dead",
+        "name": "Army of the Dead",
+        "school": "unholy",
+        "role": "summon-burst",
+        "description": "Summons 4-6 undead for 15 seconds. 90-second cooldown.",
+        "bestFor": ["Summoner builds", "PvE burst windows"],
+        "notes": "Your boss-killing cooldown. Pop when boss is stationary or CC'd. Get 1-2 uses per boss fight. Never waste when boss is about to jump or phase-transition."
+      }
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "$schema": "https://vrisingguides.com/data/schema/weapon.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-02",
+  "description": "All 14 V Rising weapon types with PvE/PvP tier rankings, skills, and playstyle data. Sourced from in-game testing on Invaders of Oakveil patch.",
+  "weapons": [
+    {
+      "id": "reaper",
+      "name": "Reaper",
+      "type": "melee",
+      "subtype": "polearm",
+      "expansion": "base",
+      "tier": { "pve": "S", "pvp": "A" },
+      "skills": {
+        "q": { "name": "Howling Reaper", "type": "AoE", "description": "Wide arc spin attack hitting all enemies in 360° radius" },
+        "e": { "name": "Tendon Swing", "type": "CC", "description": "Slowing attack that reduces enemy movement speed" }
+      },
+      "damageStyle": "wide-arc-aoe",
+      "playstyle": "AoE farming, mob clearing",
+      "strengths": ["Best AoE farming weapon in the game", "Howling Reaper clears entire camps in 2-3 swings", "Ranged auto-attacks allow kiting", "Wide hitbox forgives positioning errors"],
+      "weaknesses": ["Low single-target DPS compared to Spear/Longbow", "Slow attack speed", "Mediocre in PvP — human opponents avoid wide arcs easily"],
+      "bestFor": ["Farming resources and mobs", "Group PvE content", "Co-op play where someone else handles single-target"],
+      "recommendedBuilds": ["reaper-scholar-pve"],
+      "relatedPage": "best-weapons.html#reaper"
+    },
+    {
+      "id": "longbow",
+      "name": "Longbow",
+      "type": "ranged",
+      "subtype": "bow",
+      "expansion": "base",
+      "tier": { "pve": "S", "pvp": "S" },
+      "skills": {
+        "q": { "name": "Arrow Rain", "type": "AoE", "description": "Rains arrows in target area, dealing sustained damage over time" },
+        "e": { "name": "Focus Shot", "type": "Single Target", "description": "Charged piercing shot with bonus damage at full Focus stacks" }
+      },
+      "damageStyle": "single-target-sustained",
+      "playstyle": "Sniper, maximum range engagement",
+      "strengths": ["Highest single-target DPS at full Focus stacks", "Safest weapon — engage from 2+ screens away", "Piercing shots hit multiple lined-up enemies", "S-tier in both PvE and PvP"],
+      "weaknesses": ["Immobile while firing — vulnerable to gap closers in PvP", "No innate defensive skills", "Requires positioning knowledge"],
+      "bestFor": ["Safe boss killing", "Group PvP (shoot from behind allies)", "Learning new boss mechanics from safe distance"],
+      "recommendedBuilds": ["summoner-scholar-pve", "longbow-scholar-pve"],
+      "relatedPage": "best-weapons.html#longbow"
+    },
+    {
+      "id": "spear",
+      "name": "Spear",
+      "type": "melee",
+      "subtype": "polearm",
+      "expansion": "base",
+      "tier": { "pve": "S", "pvp": "S" },
+      "skills": {
+        "q": { "name": "Thousand Spears", "type": "Burst", "description": "Rapid multi-hit thrust dealing massive burst damage at close range" },
+        "e": { "name": "Harpoon", "type": "Utility", "description": "Pulls target toward you, repositioning bosses and PvP targets" }
+      },
+      "damageStyle": "burst-thrust",
+      "playstyle": "Boss killer, burst DPS",
+      "strengths": ["Best boss-killing weapon — Thousand Spears at close range is unmatched burst", "Harpoon repositions enemies", "Defense shred pairs with Warrior blood", "S-tier in both PvE and PvP"],
+      "weaknesses": ["Linear attacks miss mobile targets", "Requires close range for Thousand Spears", "No innate AoE outside Thousand Spears"],
+      "bestFor": ["Boss killing", "PvP anti-tank", "Players who prefer burst windows over sustained DPS"],
+      "recommendedBuilds": ["spear-warrior-pve"],
+      "relatedPage": "best-weapons.html#spear"
+    },
+    {
+      "id": "slasher",
+      "name": "Slasher",
+      "type": "melee",
+      "subtype": "dual-wield",
+      "expansion": "base",
+      "tier": { "pve": "B", "pvp": "S" },
+      "skills": {
+        "q": { "name": "Elusive Strike", "type": "Mobility", "description": "Dash attack with invisibility frames and reposition" },
+        "e": { "name": "Camouflage", "type": "Stealth", "description": "Turn invisible, next attack deals bonus damage from stealth" }
+      },
+      "damageStyle": "bleed-pressure",
+      "playstyle": "Assassin, stealth opener",
+      "strengths": ["PvP meta — stealth engage into bleed combo", "Invisibility (Camouflage) for surprise attacks", "Armor-expose synergy with Rogue blood", "Hardest to predict in PvP"],
+      "weaknesses": ["Lower raw damage than Claws or Greatsword", "Weaker without stealth opener", "B-tier in PvE — mobs don't fall for stealth"],
+      "bestFor": ["PvP duels and open-world ambushes", "Players who enjoy stealth gameplay", "Coordinated PvP with teammates"],
+      "recommendedBuilds": ["slasher-rogue-pvp"],
+      "relatedPage": "best-weapons.html#slasher"
+    },
+    {
+      "id": "pistols",
+      "name": "Pistols",
+      "type": "ranged",
+      "subtype": "firearm",
+      "expansion": "base",
+      "tier": { "pve": "A", "pvp": "A" },
+      "skills": {
+        "q": { "name": "Icebringer", "type": "Freeze", "description": "Ice shots that build freeze stacks on target" },
+        "e": { "name": "Chaos Barrage", "type": "AoE", "description": "Rapid-fire multiple shots in a cone" }
+      },
+      "damageStyle": "mid-range-sustained",
+      "playstyle": "Kiting, consistent mid-range DPS",
+      "strengths": ["Fire while moving — only weapon that deals damage while dodging", "Consistent mid-range DPS", "Icebringer + Chaos Barrage for PvP pressure", "Good for kiting slow melee bosses"],
+      "weaknesses": ["Shorter range than Longbow or Crossbow", "Lower burst than Greatsword or Spear", "Requires good movement to maximize value"],
+      "bestFor": ["Mobile boss fights", "PvP kiting builds", "Players who prefer movement over positioning"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#pistols"
+    },
+    {
+      "id": "twinblade",
+      "name": "Twinblade",
+      "type": "melee",
+      "subtype": "hybrid",
+      "expansion": "oakveil",
+      "tier": { "pve": "A", "pvp": "A" },
+      "skills": {
+        "q": { "name": "Cyro Field", "type": "Control", "description": "Creates a freezing field that slows and damages enemies" },
+        "e": { "name": "Multi-Slash", "type": "Multi-hit", "description": "Fast multi-hit combo that procs freeze faster than any other weapon" }
+      },
+      "damageStyle": "multi-hit-freeze",
+      "playstyle": "Freeze synergy, mobility",
+      "strengths": ["Fastest freeze proc with Frost Amulet", "Multi-hit attacks trigger on-hit effects rapidly", "Good mobility", "Unique playstyle not replicated by any other weapon"],
+      "weaknesses": ["Lower raw damage per hit", "Requires Frost Amulet for full potential", "Oakveil expansion required"],
+      "bestFor": ["Freeze-focused builds", "Players who enjoy proc-based gameplay", "PvP freeze control"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#twinblade"
+    },
+    {
+      "id": "greatsword",
+      "name": "Greatsword",
+      "type": "melee",
+      "subtype": "heavy",
+      "expansion": "base",
+      "tier": { "pve": "B", "pvp": "A" },
+      "skills": {
+        "q": { "name": "Spin Slash", "type": "AoE", "description": "360° spin attack, excellent for clearing adds during boss fights" },
+        "e": { "name": "Lunge", "type": "Gap Closer", "description": "Closes distance and applies 30% slow for 2 seconds" }
+      },
+      "damageStyle": "charged-burst",
+      "playstyle": "Heavy melee burst, punisher",
+      "strengths": ["Highest single-hit damage — charged heavy deals 250-400% weapon damage", "Massive burst combo (E → Q → charged heavy → Heart Strike)", "Tanky by nature — higher base defense multiplier", "Devastating in PvP as a punisher — one mistake = death"],
+      "weaknesses": ["Slow swing speed — vulnerable during charged attacks", "Predictable in PvP — skilled opponents dodge charged heavy", "Poor at multi-target sustained DPS", "Gets kited easily by ranged builds"],
+      "bestFor": ["Boss killing (burst windows)", "PvP raiding (castle structure damage)", "Players who prefer patience and timing over aggression"],
+      "recommendedBuilds": ["greatsword-brute-pve", "greatsword-brute-pvp"],
+      "relatedPage": "greatsword-build.html"
+    },
+    {
+      "id": "sword",
+      "name": "Sword",
+      "type": "melee",
+      "subtype": "balanced",
+      "expansion": "base",
+      "tier": { "pve": "B", "pvp": "B" },
+      "skills": {
+        "q": { "name": "Whirlwind", "type": "AoE", "description": "Spin attack hitting all enemies around you" },
+        "e": { "name": "Shockwave", "type": "Ranged", "description": "Ground projectile traveling forward, hitting enemies in a line" }
+      },
+      "damageStyle": "balanced",
+      "playstyle": "Beginner-friendly, all-around",
+      "strengths": ["Most forgiving moveset — best beginner weapon", "Whirlwind gives solid AoE clearing", "Easy to craft at all tiers", "Balanced damage and defense"],
+      "weaknesses": ["Outclassed by specialized weapons at higher tiers", "Excels at nothing specific", "Lower peak performance than all S/A-tier weapons"],
+      "bestFor": ["New players learning mechanics", "First playthrough", "Casual gameplay"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#sword"
+    },
+    {
+      "id": "whip",
+      "name": "Whip",
+      "type": "ranged",
+      "subtype": "control",
+      "expansion": "base",
+      "tier": { "pve": "B", "pvp": "B" },
+      "skills": {
+        "q": { "name": "Harvest Moon", "type": "Control", "description": "Pulls enemies toward you, excellent PvP engage setup" },
+        "e": { "name": "Death From Above", "type": "Aerial", "description": "Leap into the air and strike down, dealing AoE damage" }
+      },
+      "damageStyle": "control-utility",
+      "playstyle": "Ranged control, entangle",
+      "strengths": ["2-second entangle from range — excellent setup for teammates", "Harvest Moon pull engages for PvP", "Unique ranged control niche"],
+      "weaknesses": ["Lower damage output than other ranged weapons", "Niche PvE use", "Relies on team coordination for full value"],
+      "bestFor": ["Coordinated PvP play", "Control-focused playstyle", "Support role in group content"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#whip"
+    },
+    {
+      "id": "crossbow",
+      "name": "Crossbow",
+      "type": "ranged",
+      "subtype": "bow",
+      "expansion": "base",
+      "tier": { "pve": "B", "pvp": "C" },
+      "skills": {
+        "q": { "name": "Lightning Arrow", "type": "AoE", "description": "Electric arrow that chains between enemies" },
+        "e": { "name": "Fan of Bolts", "type": "AoE", "description": "Fires multiple bolts in a cone" }
+      },
+      "damageStyle": "aoe-ranged",
+      "playstyle": "Budget ranged, AoE specialist",
+      "strengths": ["Good AoE with Lightning Arrow chaining", "Faster fire rate than Longbow", "Decent for boss fights with adds", "Faster Scholar cooldown reset procs than Longbow"],
+      "weaknesses": ["Outclassed by Longbow in most scenarios", "Lower single-target DPS", "Shorter range than Longbow"],
+      "bestFor": ["Boss fights with adds", "Summoner builds (alt weapon)", "Budget ranged option before Longbow"],
+      "recommendedBuilds": ["summoner-scholar-pve"],
+      "relatedPage": "best-weapons.html#crossbow"
+    },
+    {
+      "id": "claws",
+      "name": "Claws",
+      "type": "melee",
+      "subtype": "fast",
+      "expansion": "oakveil",
+      "tier": { "pve": "C", "pvp": "B" },
+      "skills": {
+        "q": { "name": "Flurry", "type": "Multi-hit", "description": "5-7 rapid hits in ~1.5 seconds. Fastest on-hit trigger in the game" },
+        "e": { "name": "Pounce", "type": "Gap Closer", "description": "Longest gap closer in the game — nearly 2x range of other weapon dashes" }
+      },
+      "damageStyle": "aggressive-rushdown",
+      "playstyle": "Ultra-aggressive duelist",
+      "strengths": ["Highest mobility in the game", "Fastest on-hit trigger for Rogue/Scholar procs", "Stickiest weapon — targets cannot escape", "Best 1v1 PvP weapon"],
+      "weaknesses": ["Squishy — no innate defense or sustain", "Highest skill floor of any weapon", "Short range in PvE holds it back", "Poor AoE clear"],
+      "bestFor": ["PvP 1v1 duels", "Aggressive playstyle", "Expert players"],
+      "recommendedBuilds": ["claw-rogue-pvp", "claw-rogue-pve"],
+      "relatedPage": "claw-build.html"
+    },
+    {
+      "id": "mace",
+      "name": "Mace",
+      "type": "melee",
+      "subtype": "heavy",
+      "expansion": "base",
+      "tier": { "pve": "C", "pvp": "C" },
+      "skills": {
+        "q": { "name": "Crushing Blow", "type": "Burst", "description": "Heavy overhead smash with bonus damage to ore nodes and constructs" },
+        "e": { "name": "Smack", "type": "CC", "description": "Stunning blow that interrupts enemy actions" }
+      },
+      "damageStyle": "stun-lock-burst",
+      "playstyle": "Freeze team synergy, resource farming",
+      "strengths": ["Crushing Blow deals bonus damage to ore nodes — best resource gathering weapon", "Stun-lock potential vs single targets", "Niche freeze chain potential with specific builds"],
+      "weaknesses": ["Slow and clunky without full freeze build", "Outclassed by Greatsword for melee burst", "Outclassed by Spear for single-target", "Poor in PvP — too slow to hit human opponents"],
+      "bestFor": ["Resource farming (ore nodes)", "Freeze-build teams", "Players who prefer stun-locking single targets"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#mace"
+    },
+    {
+      "id": "axe",
+      "name": "Axe",
+      "type": "melee",
+      "subtype": "balanced",
+      "expansion": "base",
+      "tier": { "pve": "C", "pvp": "C" },
+      "skills": {
+        "q": { "name": "Frenzy", "type": "Buff", "description": "Attack speed self-buff. Increases swing speed for duration" },
+        "e": { "name": "X-Slash", "type": "AoE", "description": "Cross-shaped slash hitting enemies in front" }
+      },
+      "damageStyle": "sustained-melee",
+      "playstyle": "Reliable all-rounder (outclassed late game)",
+      "strengths": ["Frenzy attack speed buff", "Decent early game farming", "Easy to use"],
+      "weaknesses": ["Outclassed by Spear and Reaper at higher tiers", "Lacks unique identity", "Frenzy is its only standout trait", "No scaling advantage into late game"],
+      "bestFor": ["Early game (Copper/Iron tiers)", "Players who haven't found their preferred weapon yet"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#axe"
+    },
+    {
+      "id": "throwing-daggers",
+      "name": "Throwing Daggers",
+      "type": "ranged",
+      "subtype": "projectile",
+      "expansion": "oakveil",
+      "tier": { "pve": "C", "pvp": "D" },
+      "skills": {
+        "q": { "name": "Spinning Blade", "type": "AoE", "description": "Fan attack throwing multiple daggers in a spread pattern" },
+        "e": { "name": "Shadow Step", "type": "Mobility", "description": "Short teleport with dagger recall damage" }
+      },
+      "damageStyle": "ranged-poke",
+      "playstyle": "Niche ranged poke",
+      "strengths": ["Unique flavor as thrown weapon", "Some PvP kiting potential with Rogue blood"],
+      "weaknesses": ["Slow ranged attacks with long recovery frames", "Longbow does everything better", "D-tier in PvP", "The one weapon to avoid entirely for serious play"],
+      "bestFor": ["Experimentation", "Style/flavor preference"],
+      "recommendedBuilds": [],
+      "relatedPage": "best-weapons.html#throwing-daggers"
+    }
+  ]
+}

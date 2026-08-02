@@ -630,6 +630,42 @@ code {
   white-space: nowrap;
 }
 
+/* ── Images ── */
+.guide-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin: 24px auto;
+  border: 1px solid var(--border);
+}
+figure.guide-figure {
+  margin: 24px 0;
+  text-align: center;
+}
+figure.guide-figure figcaption {
+  font-size: 12px;
+  color: var(--text2);
+  margin-top: 8px;
+}
+/* Side-by-side images in build pages */
+.image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+@media (max-width: 768px) {
+  .image-pair { grid-template-columns: 1fr; }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4, .hub-grid { grid-template-columns: 1fr; }

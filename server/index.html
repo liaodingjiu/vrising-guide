@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRFDL6T16D"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRFDL6T16D');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Rising Server Guide — Dedicated Server Setup & Settings | V Rising Guides</title>
+<meta name="description" content="Complete V Rising server setup guide. Host a dedicated server, configure settings, manage admin commands, and optimize performance for multiplayer.">
+<meta name="keywords" content="V Rising server, V Rising dedicated server, V Rising server hosting, V Rising server setup, V Rising server settings, V Rising private server, V Rising admin commands, V Rising multiplayer server">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vrisingguides.com/server/">
+<meta property="og:title" content="V Rising Server Guide — Dedicated Server Setup & Settings">
+<meta property="og:description" content="Complete V Rising server setup guide. Host a dedicated server, configure settings, manage admin commands, and optimize performance for multiplayer.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vrisingguides.com/server/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="V Rising Server Guide — Dedicated Server Setup & Settings">
+<meta property="og:image" content="https://vrisingguides.com/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://vrisingguides.com/og-image.png">
+<meta name="twitter:description" content="Host a dedicated server, configure settings, manage admin commands, and optimize performance for V Rising multiplayer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet"><style>h1,.logo{font-family:'Orbitron',sans-serif}</style>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/shared.css">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"V Rising Server Guide — Dedicated Server Setup & Settings","description":"Complete V Rising server setup guide. Learn how to host a dedicated server, configure settings, manage admin commands, and optimize performance for multiplayer.","author":{"@type":"Person","name":"Alex","url":"https://vrisingguides.com/about.html"},"datePublished":"2026-08-02","dateModified":"2026-08-02","publisher":{"@type":"Organization","name":"V Rising Guides"},"mainEntityOfPage":"https://vrisingguides.com/server/","isAccessibleForFree":true,"inLanguage":"en","thumbnailUrl":"https://vrisingguides.com/favicon.svg","wordCount":3200,"about":{"@type":"Thing","name":"V Rising","sameAs":"https://en.wikipedia.org/wiki/V_Rising"}}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vrisingguides.com/"},{"@type":"ListItem","position":2,"name":"Server","item":"https://vrisingguides.com/server/"}]}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I setup a V Rising dedicated server?","acceptedAnswer":{"@type":"Answer","text":"Use SteamCMD to download the V Rising Dedicated Server tool (App ID 1829350). Install it on a Windows or Linux machine, configure ServerHostSettings.json and ServerGameSettings.json, open ports 9876-9877 (UDP) and 27015-27016 (UDP) on your firewall, and launch VRisingServer.exe. Full step-by-step instructions with configuration examples are in our server setup guide."}},{"@type":"Question","name":"What are the hardware requirements for a V Rising server?","acceptedAnswer":{"@type":"Answer","text":"Minimum: 2 CPU cores, 4 GB RAM, 10 GB SSD storage. Recommended for 10-20 players: 4 CPU cores, 8 GB RAM, 20 GB SSD. For 40+ players: 6+ CPU cores, 16 GB RAM, 50 GB SSD. CPU single-thread performance matters more than core count — V Rising's server uses primarily 2 threads. RAM scales with player count (~200 MB per player) and castle count."}},{"@type":"Question","name":"Can I host a V Rising server for free?","acceptedAnswer":{"@type":"Answer","text":"Yes — if you have a spare PC with the minimum requirements, you can host a V Rising dedicated server for free using SteamCMD. Your electricity and internet costs are the only expenses. For 24/7 uptime without running your own hardware, paid hosting services start at approximately $10-15/month for a 10-slot server."}},{"@type":"Question","name":"How do I make my V Rising server private?","acceptedAnswer":{"@type":"Answer","text":"Set a password in ServerHostSettings.json: add '\"Password\": \"yourpassword\"' to the config. Players must enter this password to join. For a friends-only server, combine a password with the server browser visibility set to false ('\"ListOnMasterServer\": false') so your server doesn't appear in public listings — only players with the direct IP and password can connect."}},{"@type":"Question","name":"What ports does a V Rising server need?","acceptedAnswer":{"@type":"Answer","text":"V Rising requires UDP ports 9876-9877 (game traffic) and 27015-27016 (Steam query). All four ports must be forwarded on your router and allowed through your firewall. If you run multiple servers on the same machine, increment the query port by 1 for each additional server (27016, 27017, etc.)."}}]}
+</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xk8deme19b");</script>
+</head>
+<body>
+
+<div class="top-bar">V Rising Server Guide — Dedicated Server Setup &amp; Settings. Updated <time datetime="2026-08-02">August 2, 2026</time>.</div>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner"><a href="/" class="logo">V Rising<span>Guides</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/builds/">Builds</a></li><li><a href="/castle/">Castle</a></li><li><a href="/server/">Server</a></li><li><a href="/boss-order.html">Boss Order</a></li><li><a href="/best-weapons.html">Best Weapons</a></li><li><a href="/beginner-guide.html">Beginner</a></li><li class="nav-more"><a href="/resources.html">More ▾</a><ul class="nav-dropdown"><li><a href="/resources.html">Resources</a></li><li><a href="/map.html">Map</a></li><li><a href="/servants.html">Servants</a></li><li><a href="/progression.html">Progression</a></li><li><a href="/whetstone.html">Whetstone</a></li><li><a href="/steam-deck.html">Steam Deck</a></li></ul></li></ul><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="sun">☀️</span><span class="moon">🌙</span></button></div></div>
+</nav>
+
+<main class="container">
+
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Server</nav>
+
+<section class="hero">
+  <h1>V Rising Server Guide</h1>
+  <p>Everything you need to <strong>setup, configure, and host a V Rising multiplayer server</strong> — from dedicated server installation to performance optimization. Whether you want a private co-op world for 4 friends, a 40-player PvP arena, or a 24/7 dedicated server with custom settings, this guide covers every step. Tested on Windows and Linux with the latest Invaders of Oakveil patch.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="val">3</div><div class="lbl">Server Types</div></div>
+    <div class="hero-stat"><div class="val">4</div><div class="lbl">Ports to Open</div></div>
+    <div class="hero-stat"><div class="val">40+</div><div class="lbl">Max Players</div></div>
+    <div class="hero-stat"><div class="val">24/7</div><div class="lbl">Uptime</div></div>
+  </div>
+  <div class="hero-updated">Last updated: <time datetime="2026-08-02">August 2, 2026</time></div>
+</section>
+
+<nav class="toc" aria-label="Table of contents"><h3>What's on this page</h3><ol>
+  <li><a href="#server-types">Server Types — Which One Do You Need?</a></li>
+  <li><a href="#dedicated-setup">Dedicated Server Setup (Step-by-Step)</a></li>
+  <li><a href="#requirements">Server Hardware Requirements</a></li>
+  <li><a href="#hosting">Server Hosting Options</a></li>
+  <li><a href="#private-server">Private Server &amp; Co-op Setup</a></li>
+  <li><a href="#settings">Server Settings Reference</a></li>
+  <li><a href="#admin-commands">Admin Commands</a></li>
+  <li><a href="#performance">Performance Optimization</a></li>
+  <li><a href="#faq">FAQ</a></li>
+</ol></nav>
+
+<!-- SECTION: Server Types -->
+<section class="section" id="server-types">
+  <h2><span class="icon">🖥️</span> Server Types — Which One Do You Need?</h2>
+  <p class="section-desc">V Rising offers three ways to play multiplayer. Pick the right one for your group size and needs.</p>
+  <div class="prose">
+    <table>
+      <thead><tr><th>Type</th><th>Max Players</th><th>Uptime</th><th>Cost</th><th>Best For</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Peer-to-Peer (Host &amp; Play)</strong></td><td>4</td><td>Host online only</td><td>Free</td><td>2-4 friends, casual co-op sessions</td></tr>
+        <tr><td><strong>Dedicated Server (Self-Hosted)</strong></td><td>40+</td><td>24/7</td><td>Electricity + hardware</td><td>Clans, communities, serious PvP</td></tr>
+        <tr><td><strong>Dedicated Server (Hosted)</strong></td><td>10-100</td><td>24/7</td><td>$10-30/month</td><td>No hardware, professional uptime, DDoS protection</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Peer-to-Peer: Quick, Free, Limited</h3>
+    <p>This is the "default" multiplayer mode. The host player runs the game and the server simultaneously on their PC. <strong>The host must be online for others to play.</strong> When the host logs off, the world pauses. Works fine for a small group of friends playing together, but performance degrades quickly above 4 players because the host's PC is running both the game client AND the server logic.</p>
+    <p><strong>Limitations:</strong> Max 4 players. Host lag affects everyone. No persistence when host is offline. Cannot run mods easily.</p>
+
+    <h3>Dedicated Server: Full Control, Maximum Players</h3>
+    <p>A dedicated server runs separately from the game client — it's a standalone program that hosts the world 24/7. Players connect and disconnect freely, and the world keeps running even when nobody is online (your castle can be raided at 4 AM). This is how all serious V Rising communities operate.</p>
+    <p><strong>Advantages:</strong> 40+ players. 24/7 uptime. Custom settings. Mod support. Better performance (server isn't also rendering graphics). <strong>The rest of this guide focuses on dedicated servers.</strong></p>
+  </div>
+  <div class="tip-box"><strong>Decision Rule:</strong> If you play with 2-3 friends and always play together → Peer-to-Peer is fine. If you want the world to persist when you're offline, or you have 5+ players, or you want custom settings → Dedicated Server is required.</div>
+</section>
+
+<!-- SECTION: Dedicated Setup -->
+<section class="section" id="dedicated-setup">
+  <h2><span class="icon">🔧</span> Dedicated Server Setup (Step-by-Step)</h2>
+  <p class="section-desc">Complete walkthrough for installing and configuring a V Rising dedicated server on Windows or Linux.</p>
+  <div class="prose">
+    <h3>Step 1: Install SteamCMD</h3>
+    <p><strong>SteamCMD</strong> is Valve's command-line tool for downloading dedicated server files. You need this to download the V Rising server without installing Steam.</p>
+    <p><strong>Windows:</strong> Download from <a href="https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip" target="_blank" rel="noopener">Valve's CDN</a>, extract to <code>C:\steamcmd\</code>.</p>
+    <p><strong>Linux:</strong> <code>sudo apt install steamcmd</code> (Ubuntu/Debian) or use your distro's package manager.</p>
+
+    <h3>Step 2: Download V Rising Dedicated Server</h3>
+    <p>Open SteamCMD and run:</p>
+    <div style="background:var(--muted-bg);padding:12px;border-radius:var(--radius-sm);font-family:monospace;font-size:13px;margin:12px 0;">
+      login anonymous<br>
+      force_install_dir C:\VRisingServer<br>
+      app_update 1829350 validate<br>
+      quit
+    </div>
+    <p><strong>App ID 1829350</strong> is the V Rising Dedicated Server tool. The <code>validate</code> flag ensures all files are downloaded correctly.</p>
+
+    <h3>Step 3: Configure Server Settings</h3>
+    <p>Two configuration files control your server:</p>
+    <table>
+      <thead><tr><th>File</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><code>ServerHostSettings.json</code></td><td>Server name, password, port, max players, save interval, IP binding</td></tr>
+        <tr><td><code>ServerGameSettings.json</code></td><td>Game rules — PvP/PvE, damage multipliers, resource rates, castle settings, day/night cycle</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Step 4: Configure Firewall &amp; Port Forwarding</h3>
+    <p>V Rising requires these UDP ports to be open:</p>
+    <table>
+      <thead><tr><th>Port</th><th>Protocol</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>9876</td><td>UDP</td><td>Game traffic (primary)</td></tr>
+        <tr><td>9877</td><td>UDP</td><td>Game traffic (secondary)</td></tr>
+        <tr><td>27015</td><td>UDP</td><td>Steam query (server browser)</td></tr>
+        <tr><td>27016</td><td>UDP</td><td>Steam query (secondary)</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Windows Firewall:</strong> Add inbound rules for all 4 ports (UDP). <strong>Router:</strong> Forward these ports to your server's local IP address. If you're using a hosting provider, the provider handles this for you.</p>
+
+    <h3>Step 5: Start the Server</h3>
+    <p><strong>Windows:</strong> Run <code>VRisingServer.exe</code> from the install directory.</p>
+    <p><strong>Linux:</strong> Run <code>./VRisingServer.sh</code> or use systemd for automatic startup. See the <a href="#performance">Performance Optimization section →</a> for systemd service setup.</p>
+    <p>The server console will show initialization messages. When you see "Server is ready" — your server is live and players can connect.</p>
+
+    <h3>Step 6: Connect to Your Server</h3>
+    <p>Players connect via: <strong>Direct Connect</strong> (enter IP:port in the game client) or <strong>Server Browser</strong> (if <code>ListOnMasterServer</code> is true in your config). For a private server, share the IP and password with your group.</p>
+  </div>
+  <div class="tip-box"><strong>First-Time Setup Tip:</strong> After starting the server for the first time, stop it and check the generated config files. The first launch creates default <code>ServerHostSettings.json</code> and <code>ServerGameSettings.json</code> files — customize these before your players join. Common first-launch mistake: forgetting to set a password on a private server and having randoms join your world.</div>
+</section>
+
+<!-- SECTION: Requirements -->
+<section class="section" id="requirements">
+  <h2><span class="icon">💻</span> Server Hardware Requirements</h2>
+  <div class="prose">
+    <table>
+      <thead><tr><th>Player Count</th><th>CPU</th><th>RAM</th><th>Storage</th><th>Network</th></tr></thead>
+      <tbody>
+        <tr><td><strong>1-4 players</strong></td><td>2 cores (any modern CPU)</td><td>4 GB</td><td>10 GB SSD</td><td>5 Mbps upload</td></tr>
+        <tr><td><strong>5-15 players</strong></td><td>4 cores (3.0+ GHz)</td><td>8 GB</td><td>20 GB SSD</td><td>10 Mbps upload</td></tr>
+        <tr><td><strong>16-30 players</strong></td><td>4-6 cores (3.5+ GHz)</td><td>12 GB</td><td>40 GB SSD</td><td>25 Mbps upload</td></tr>
+        <tr><td><strong>31-50 players</strong></td><td>6+ cores (3.5+ GHz)</td><td>16 GB</td><td>60 GB SSD</td><td>50 Mbps upload</td></tr>
+      </tbody>
+    </table>
+    <div class="tip-box"><strong>Critical:</strong> V Rising's server is primarily <strong>single-threaded</strong> — it uses 2 main threads (one for game logic, one for networking). A CPU with high single-core performance (e.g., Intel i5/i7 12th gen+, AMD Ryzen 5/7 5000+) matters more than having 16 cores. An old Xeon with 16 slow cores will perform worse than a modern i5 with 6 fast cores.</div>
+    <p>Each active player consumes approximately <strong>150-250 MB of RAM</strong> depending on world complexity (castles, servants, territory). Each additional castle on the map adds server memory overhead. Plan your RAM based on player count, not the minimum specs.</p>
+  </div>
+</section>
+
+<!-- SECTION: Hosting Options -->
+<section class="section" id="hosting">
+  <h2><span class="icon">☁️</span> Server Hosting Options</h2>
+  <p class="section-desc">Don't want to run your own hardware? These hosting providers offer V Rising server hosting with 24/7 uptime and DDoS protection.</p>
+  <div class="prose">
+    <p>When choosing a hosting provider, compare these factors:</p>
+    <table>
+      <thead><tr><th>Factor</th><th>What to Look For</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CPU Performance</strong></td><td>Modern CPU (3.5+ GHz single-core). Avoid "unlimited players" on old hardware — your server will lag.</td></tr>
+        <tr><td><strong>RAM Allocation</strong></td><td>Minimum 4 GB. 8 GB for 10+ players. Check if RAM is dedicated or shared.</td></tr>
+        <tr><td><strong>DDoS Protection</strong></td><td>Essential for public PvP servers. Without it, your server goes offline when someone gets raided and retaliates with a DDoS.</td></tr>
+        <tr><td><strong>Full FTP/Config Access</strong></td><td>You need access to ServerHostSettings.json and ServerGameSettings.json. Some hosts lock these behind their own panel.</td></tr>
+        <tr><td><strong>Auto-Restart &amp; Backups</strong></td><td>Server should auto-restart on crash. Automated daily backups prevent world loss from corruption.</td></tr>
+        <tr><td><strong>Server Location</strong></td><td>Pick a data center close to your players. 50ms ping vs 150ms ping is noticeable in PvP combat.</td></tr>
+        <tr><td><strong>Mod Support</strong></td><td>If you plan to run mods (BepInEx, server plugins), verify the host allows custom DLL loading.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Self-Hosted vs. Paid Hosting</h3>
+    <table>
+      <thead><tr><th>Aspect</th><th>Self-Hosted</th><th>Paid Hosting</th></tr></thead>
+      <tbody>
+        <tr><td>Cost</td><td>$0 + electricity</td><td>$10-30/month</td></tr>
+        <tr><td>Uptime</td><td>Your hardware, your responsibility</td><td>99.9% uptime SLA (typical)</td></tr>
+        <tr><td>DDoS Protection</td><td>None (your home IP exposed)</td><td>Included with most providers</td></tr>
+        <tr><td>Performance</td><td>Depends on your hardware</td><td>Guaranteed specs</td></tr>
+        <tr><td>Setup Difficulty</td><td>You do everything</td><td>One-click install, pre-configured</td></tr>
+        <tr><td>Best For</td><td>Tech-savvy, budget-conscious, small communities</td><td>Public servers, large communities, PvP servers</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tip-box"><strong>Recommendation:</strong> Start with self-hosted if you have a spare PC and technical knowledge — it's free and gives you full control. If your community grows beyond 15 players or you experience DDoS attacks, switch to a paid host. The monthly cost is worth professional infrastructure once your server becomes a target.</div>
+</section>
+
+<!-- SECTION: Private Server -->
+<section class="section" id="private-server">
+  <h2><span class="icon">🔒</span> Private Server &amp; Co-op Setup</h2>
+  <p class="section-desc">Setting up a private server for friends-only gameplay — password protection, whitelisting, and visibility control.</p>
+  <div class="prose">
+    <h3>Making Your Server Private</h3>
+    <p>In <code>ServerHostSettings.json</code>, add these settings:</p>
+    <div style="background:var(--muted-bg);padding:12px;border-radius:var(--radius-sm);font-family:monospace;font-size:13px;margin:12px 0;">
+      {<br>
+      &nbsp;&nbsp;"Name": "My Private Server",<br>
+      &nbsp;&nbsp;"Password": "our-secret-password",<br>
+      &nbsp;&nbsp;"ListOnMasterServer": false,<br>
+      &nbsp;&nbsp;"MaxUsers": 10,<br>
+      &nbsp;&nbsp;"SaveInterval": 120<br>
+      }
+    </div>
+    <ul>
+      <li><strong>Password:</strong> Required to join. Share only with your group.</li>
+      <li><strong>ListOnMasterServer: false</strong> — Your server won't appear in the public server browser. Only players with the direct IP and password can connect. This is the strongest privacy setting.</li>
+      <li><strong>MaxUsers:</strong> Set to your group size. Fewer slots = less server resource consumption.</li>
+      <li><strong>SaveInterval:</strong> How often (in seconds) the world saves. 120 seconds is a good balance — frequent enough that crashes lose minimal progress, not so frequent that saving causes lag spikes.</li>
+    </ul>
+
+    <h3>Co-op Specific Settings</h3>
+    <p>For co-op PvE play with friends, configure <code>ServerGameSettings.json</code>:</p>
+    <ul>
+      <li><strong>GameModeType: "PvE"</strong> — No player damage. Prevents accidental (or intentional) friendly fire.</li>
+      <li><strong>CastleDamageMode: "Never"</strong> — Castles are indestructible. Your builds are safe when you're offline.</li>
+      <li><strong>DropTableModifier_General: 1.5</strong> — 1.5x loot. Less grinding, more vampire action.</li>
+      <li><strong>CraftRateModifier: 1.5</strong> — Faster crafting. Nobody wants to wait 10 minutes for a single piece of armor in a co-op session.</li>
+      <li><strong>BloodDrainModifier: 0.5</strong> — Blood essence drains at half speed. Less feeding, more playing.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION: Settings Reference -->
+<section class="section" id="settings">
+  <h2><span class="icon">⚙️</span> Server Settings Reference</h2>
+  <p class="section-desc">Key configuration options for ServerHostSettings.json and ServerGameSettings.json.</p>
+  <div class="prose">
+    <h3>ServerHostSettings.json — Key Settings</h3>
+    <table>
+      <thead><tr><th>Setting</th><th>Type</th><th>Description</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td><code>Name</code></td><td>String</td><td>Server name shown in browser</td><td>"My V Rising World"</td></tr>
+        <tr><td><code>Description</code></td><td>String</td><td>Server description in browser</td><td>"PvE | 2x Loot | Active Admin"</td></tr>
+        <tr><td><code>Port</code></td><td>Int</td><td>Game port (UDP)</td><td>9876</td></tr>
+        <tr><td><code>QueryPort</code></td><td>Int</td><td>Steam query port (UDP)</td><td>27015</td></tr>
+        <tr><td><code>MaxUsers</code></td><td>Int</td><td>Max concurrent players</td><td>40</td></tr>
+        <tr><td><code>Password</code></td><td>String</td><td>Server password (empty = public)</td><td>"mypassword"</td></tr>
+        <tr><td><code>ListOnMasterServer</code></td><td>Bool</td><td>Show in public server browser</td><td>true</td></tr>
+        <tr><td><code>SaveInterval</code></td><td>Int</td><td>Seconds between world saves</td><td>120</td></tr>
+        <tr><td><code>Secure</code></td><td>Bool</td><td>Enable VAC anti-cheat</td><td>true</td></tr>
+      </tbody>
+    </table>
+
+    <h3>ServerGameSettings.json — Key Settings</h3>
+    <table>
+      <thead><tr><th>Setting</th><th>Values</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><code>GameModeType</code></td><td>"PvE", "PvP"</td><td>Game mode. Affects player damage and castle rules.</td></tr>
+        <tr><td><code>CastleDamageMode</code></td><td>"Never", "Always", "TimeRestricted"</td><td>When castles can be damaged. "TimeRestricted" enables raid windows.</td></tr>
+        <tr><td><code>DropTableModifier_General</code></td><td>0.1 - 5.0</td><td>Loot multiplier. 2.0 = double drops.</td></tr>
+        <tr><td><code>MaterialYieldModifier_Global</code></td><td>0.1 - 5.0</td><td>Resource harvest multiplier.</td></tr>
+        <tr><td><code>CraftRateModifier</code></td><td>0.1 - 5.0</td><td>Crafting speed multiplier.</td></tr>
+        <tr><td><code>BloodDrainModifier</code></td><td>0.1 - 5.0</td><td>Blood essence drain rate. Lower = slower drain.</td></tr>
+        <tr><td><code>DayDurationInSeconds</code></td><td>60 - 3600</td><td>Length of in-game day. Default ~1080s (18 min).</td></tr>
+        <tr><td><code>SunDamageModifier</code></td><td>0.0 - 5.0</td><td>Sun damage multiplier. 0.0 = no sun damage (popular for casual servers).</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SECTION: Admin Commands -->
+<section class="section" id="admin-commands">
+  <h2><span class="icon">👑</span> Admin Commands</h2>
+  <p class="section-desc">Essential admin commands for managing your V Rising server.</p>
+  <div class="prose">
+    <h3>How to Become Admin</h3>
+    <p>Add your Steam64 ID to the <code>adminlist.txt</code> file in the server's save directory. Find your Steam64 ID at <a href="https://steamid.io/" target="_blank" rel="noopener">steamid.io</a>. One Steam ID per line. Restart the server after editing.</p>
+
+    <h3>Command Reference</h3>
+    <table>
+      <thead><tr><th>Command</th><th>Effect</th></tr></thead>
+      <tbody>
+        <tr><td><code>.adminauth</code></td><td>Activate admin permissions (must run first after login)</td></tr>
+        <tr><td><code>.deadminauth</code></td><td>Deactivate admin permissions</td></tr>
+        <tr><td><code>.ban &lt;PlayerName&gt;</code></td><td>Ban a player from the server</td></tr>
+        <tr><td><code>.unban &lt;SteamID&gt;</code></td><td>Remove a ban</td></tr>
+        <tr><td><code>.kick &lt;PlayerName&gt;</code></td><td>Kick a player (they can rejoin)</td></tr>
+        <tr><td><code>.announce &lt;message&gt;</code></td><td>Broadcast a message to all players</td></tr>
+        <tr><td><code>.teleporttoplayer &lt;PlayerName&gt;</code></td><td>Teleport to a player's location</td></tr>
+        <tr><td><code>.teleportplayer &lt;Player1&gt; &lt;Player2&gt;</code></td><td>Teleport Player1 to Player2</td></tr>
+        <tr><td><code>.give &lt;ItemName&gt; &lt;Amount&gt;</code></td><td>Spawn items into your inventory</td></tr>
+        <tr><td><code>.setadminlevel &lt;PlayerName&gt; &lt;Level&gt;</code></td><td>Grant/revoke admin to another player</td></tr>
+        <tr><td><code>.clanaccept</code></td><td>Accept pending clan invitation</td></tr>
+      </tbody>
+    </table>
+    <div class="tip-box"><strong>Security Note:</strong> Only give admin to people you trust. An admin with <code>.give</code> access can spawn endgame items and break your server's economy. Rotate admin list regularly and remove admins who haven't played in 2+ weeks.</div>
+  </div>
+</section>
+
+<!-- SECTION: Performance -->
+<section class="section" id="performance">
+  <h2><span class="icon">🚀</span> Performance Optimization</h2>
+  <p class="section-desc">Keep your server running smoothly as player count and world complexity grow.</p>
+  <div class="prose">
+    <h3>1. Use an SSD</h3>
+    <p>Never run a V Rising server on an HDD. World saves write hundreds of MB to disk — on an HDD, this causes noticeable lag spikes every save interval. An NVMe SSD is ideal; SATA SSD is minimum.</p>
+
+    <h3>2. Set Up Automatic Restarts</h3>
+    <p>V Rising servers have memory leaks over long uptimes — RAM usage slowly climbs until performance degrades or the server crashes. Schedule a daily restart at off-peak hours (e.g., 4 AM local time).</p>
+    <p><strong>Windows:</strong> Use Task Scheduler to kill and restart <code>VRisingServer.exe</code> daily.<br>
+    <strong>Linux:</strong> Use a systemd service with a cron job for daily restarts.</p>
+
+    <h3>3. Limit Castle Count</h3>
+    <p>Castles are the biggest performance drain on V Rising servers. Each castle adds AI pathfinding (servants), territory calculations, and structure loading. Set a reasonable castle limit per player (1-3) in server settings. Unlimited castles will bring any server to its knees at 20+ players.</p>
+
+    <h3>4. Monitor RAM Usage</h3>
+    <p>Watch your server's RAM over time. If it grows 100-200 MB per day without dropping after restarts, you have a memory leak — update to the latest server version. If RAM usage is consistently above 80%, upgrade your hardware or reduce player slots.</p>
+
+    <h3>5. Network Optimization</h3>
+    <ul>
+      <li>Use a <strong>wired Ethernet connection</strong> — WiFi adds unpredictable latency spikes.</li>
+      <li>Set server <strong>TickRate</strong> to 30 (default) or lower. Higher tick rate = smoother combat but more bandwidth and CPU usage.</li>
+      <li>If players report rubberbanding, check your <strong>upload bandwidth saturation</strong>. Each player consumes 50-100 Kbps on average, spiking to 500+ Kbps during large PvP fights.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <h2><span class="icon">❓</span> Server FAQ</h2>
+  <div class="prose">
+    <div class="faq-item"><h3>Can I transfer my single-player world to a dedicated server?</h3><p>Yes. Copy your save folder from <code>%APPDATA%\..\LocalLow\Stunlock Studios\VRising\Saves\</code> to your server's save directory. The server will recognize the world on next launch. Test that everything loads correctly before inviting players — some single-player settings may conflict with multiplayer mode.</p></div>
+    <div class="faq-item"><h3>How do I update my server when V Rising patches?</h3><p>Run SteamCMD again: <code>app_update 1829350 validate</code>. This downloads the latest server files. Always update your server within 24 hours of a game patch — version mismatches between server and clients cause connection failures. Schedule a maintenance window and announce it to your players.</p></div>
+    <div class="faq-item"><h3>Can I run mods on my V Rising server?</h3><p>Yes — V Rising supports mods through <strong>BepInEx</strong> (a Unity modding framework) and <strong>ServerPlugins</strong>. Popular mods include: QoL improvements (auto-stack, faster crafting), PvP balance mods, and admin tools. Note: modded servers don't appear in the vanilla server browser — players need to connect via Direct Connect or use the modded server browser. Mods break on patches, so expect maintenance work after each game update.</p></div>
+    <div class="faq-item"><h3>Why can't players find my server in the browser?</h3><p>Three common causes: (1) <code>ListOnMasterServer</code> is set to <code>false</code> in your config. (2) Port 27015-27016 (UDP) are not forwarded or firewalled — the server browser uses these ports. (3) Your server is on a different game version than the client (update your server). Verify all four ports are open, <code>ListOnMasterServer</code> is <code>true</code>, and your server version matches the latest game patch.</p></div>
+    <div class="faq-item"><h3>How many players can a V Rising server handle?</h3><p>The official limit is 40 players per server, but many community servers push to 50-60 with high-end hardware. Above 40 players, performance degrades noticeably — castle loading causes lag spikes when many players are in different territories. For large communities, consider running multiple linked servers rather than pushing one server past 40 slots.</p></div>
+  </div>
+</section>
+
+<a href="/castle/" class="ad-placeholder"><span class="rec-icon">🏰</span><span class="rec-body"><strong>Related: Castle Building Guide</strong><p>Running a PvP server? Your castle design matters. See our guide on honeycomb defense, bait rooms, and PvP-specific layouts.</p></span><span class="rec-arrow">→</span></a>
+
+<div class="author-box"><div class="author-avatar">🧛</div><div class="author-info"><h4>Written by Alex</h4><p>V Rising Master player with 1,200+ hours in Vardoran. Self-hosted dedicated servers for 3 full playthroughs. Tested on Windows Server 2022 and Ubuntu 22.04 with 4-30 player configurations.</p></div></div>
+
+<div class="sources-box"><h4>Sources &amp; References</h4><ul>
+  <li>V Rising Dedicated Server tool (Steam App ID 1829350) — direct testing on Windows and Linux.</li>
+  <li><a href="https://www.stunlock.com/" target="_blank" rel="noopener">Stunlock Studios Official</a> — server documentation and patch notes.</li>
+  <li><a href="https://steamcommunity.com/app/1604030/guides/" target="_blank" rel="noopener">Steam Community Guides</a> — cross-referenced server setup procedures.</li>
+  <li><a href="https://www.reddit.com/r/vrising/" target="_blank" rel="noopener">r/vrising Community</a> — server hosting recommendations and admin best practices.</li>
+</ul></div>
+
+<div class="share-bar"><span>Share this guide:</span><a href="https://twitter.com/intent/tweet?text=V+Rising+Server+Guide+—+Dedicated+Server+Setup+%26+Settings&url=https://vrisingguides.com/server/" target="_blank" rel="noopener" class="share-btn">𝕏 Twitter</a><a href="https://www.reddit.com/r/vrising/submit?url=https://vrisingguides.com/server/&title=V+Rising+Server+Guide+—+Setup+%26+Hosting" target="_blank" rel="noopener" class="share-btn">🔗 Reddit</a><a href="https://www.facebook.com/sharer/sharer.php?u=https://vrisingguides.com/server/" target="_blank" rel="noopener" class="share-btn">📘 Facebook</a></div>
+
+<div class="feedback-box"><p><strong>Was this server guide helpful?</strong></p><div class="feedback-btns"><button class="feedback-btn" id="feedbackYes" onclick="handleFeedback('yes')">👍 Yes</button><button class="feedback-btn" id="feedbackNo" onclick="handleFeedback('no')">👎 No</button></div></div>
+
+</main>
+
+<footer>
+  <p>V Rising Guides — The independent V Rising resource. Not affiliated with Stunlock Studios.</p>
+  <p style="margin-top:8px">V Rising and all related content are trademarks of Stunlock Studios AB.</p>
+  <p style="margin-top:8px"><a href="/about.html">About</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms.html">Terms of Use</a> &nbsp;|&nbsp; <a href="/contact.html">Contact</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+<script src="/cookie-consent.js"></script>
+<script>(function(){var t=document.getElementById('themeToggle'),s=localStorage.getItem('vrising-theme');if(s)document.documentElement.setAttribute('data-theme',s);if(t)t.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme'),n=(c==='dark')?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('vrising-theme',n);if(typeof gtag==='function')gtag('event','theme_toggle',{theme:n});});var b=document.getElementById('backTop');if(b){window.addEventListener('scroll',function(){b.classList.toggle('visible',window.scrollY>500);});b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});}})();function handleFeedback(t){document.getElementById('feedbackYes').classList.toggle('voted',t==='yes');document.getElementById('feedbackNo').classList.toggle('voted',t==='no');if(window.clarity)window.clarity("event","feedback",t);var e=document.querySelector('.feedback-box p');if(e)e.innerHTML='<strong>Thanks! Your feedback helps us improve.</strong>';if(typeof gtag==='function')gtag('event','feedback',{type:t});}</script>
+</body>
+</html>

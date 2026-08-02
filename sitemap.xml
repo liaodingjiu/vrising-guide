@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
   <url><loc>https://vrisingguides.com/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://vrisingguides.com/builds.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/greatsword-build.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://vrisingguides.com/claw-build.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://vrisingguides.com/summoner-build.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://vrisingguides.com/pvp-build.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Builds Section -->
+  <url><loc>https://vrisingguides.com/builds/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/builds/greatsword-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/builds/claw-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/builds/summoner-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/builds/pvp-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Castle Section -->
+  <url><loc>https://vrisingguides.com/castle/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/castle/best-locations/</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/castle/layouts/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/castle/design/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Server Section -->
+  <url><loc>https://vrisingguides.com/server/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/server/dedicated-server/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/server/settings/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vrisingguides.com/server/private-server/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Programmatic SEO: Tier 1 & 2 Build Pages -->
+  <url><loc>https://vrisingguides.com/builds/best-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vrisingguides.com/builds/pve-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/builds/beginner-build/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vrisingguides.com/builds/solo-build/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vrisingguides.com/builds/boss-killer-build/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vrisingguides.com/builds/mage-build/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- Comparison Pages -->
+  <url><loc>https://vrisingguides.com/compare/greatsword-vs-claw/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Boss-Specific Builds -->
+  <url><loc>https://vrisingguides.com/boss/dracula-best-build/</loc><lastmod>2026-08-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Core Guides -->
   <url><loc>https://vrisingguides.com/boss-order.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vrisingguides.com/best-weapons.html</loc><lastmod>2026-07-31</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vrisingguides.com/blood-types.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/steam-deck.html</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://vrisingguides.com/whetstone.html</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://vrisingguides.com/best-base-locations.html</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/castle-building.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://vrisingguides.com/server.html</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vrisingguides.com/beginner-guide.html</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- General Guides (More dropdown) -->
   <url><loc>https://vrisingguides.com/resources.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/servants.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/progression.html</loc><lastmod>2026-07-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://vrisingguides.com/map.html</loc><lastmod>2026-07-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vrisingguides.com/armor.html</loc><lastmod>2026-07-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vrisingguides.com/whetstone.html</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vrisingguides.com/steam-deck.html</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Static Pages -->
   <url><loc>https://vrisingguides.com/about.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://vrisingguides.com/contact.html</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://vrisingguides.com/privacy.html</loc><lastmod>2026-07-31</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>

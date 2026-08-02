@@ -1,0 +1,16 @@
+# Cloudflare Pages / Netlify redirects
+# Phase 2 URL Migration — August 2, 2026
+
+# Builds section
+/builds.html                     /builds/                           301
+/greatsword-build.html           /builds/greatsword-build/          301
+/claw-build.html                 /builds/claw-build/                301
+/summoner-build.html             /builds/summoner-build/            301
+/pvp-build.html                  /builds/pvp-build/                 301
+
+# Castle section
+/castle-building.html            /castle/                           301
+/best-base-locations.html        /castle/best-locations/            301
+
+# Server section
+/server.html                     /server/                           301

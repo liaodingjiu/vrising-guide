@@ -1,0 +1,155 @@
+{
+  "$schema": "https://vrisingguides.com/data/schema/blood-type.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-02",
+  "description": "All 7 V Rising blood types with quality thresholds, bonuses, stage recommendations, and weapon compatibility. Sourced from in-game testing and community data.",
+  "bloodTypes": [
+    {
+      "id": "brute",
+      "name": "Brute",
+      "tier": { "pve": "A", "pvp": "A", "earlyGame": "S" },
+      "qualityThresholds": {
+        "any": { "bonus": "Attack speed +8%, life leech 4%" },
+        "60": { "bonus": "Attack speed +15%, life leech 7%, +10% max health" },
+        "90": { "bonus": "Attack speed +25%, life leech 10%, +15% max health" }
+      },
+      "bonusSummary": "Attack speed steroid + life leech + max health",
+      "recommendedUsage": {
+        "earlyGame": "Best early game blood — survivability from life leech is unmatched for new players",
+        "midGame": "Pairs with Greatsword and Mace for burst melee builds",
+        "lateGame": "Still strong for PvP Greatsword builds and melee PvE",
+        "pvp": "A-tier — attack speed compensates for slow heavy weapons, max HP wins trades",
+        "pve": "A-tier — life leech sustains through long boss fights"
+      },
+      "bestWeapons": ["Greatsword", "Mace"],
+      "synergy": "Attack speed steroid directly compensates for slow, heavy weapons. Life leech keeps you alive in melee range.",
+      "relatedPage": "blood-types.html#brute"
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "tier": { "pve": "S", "pvp": "C", "earlyGame": "B" },
+      "qualityThresholds": {
+        "any": { "bonus": "Spell power +10%" },
+        "60": { "bonus": "Spell power +15%, every 8th hit resets spell cooldowns" },
+        "90": { "bonus": "Spell power +20%, cooldown reset on 8th hit, free spell casts periodically" }
+      },
+      "bonusSummary": "Spell cooldown reset + spell power",
+      "recommendedUsage": {
+        "earlyGame": "B-tier early — you don't have enough spells to benefit from cooldown reset",
+        "midGame": "Becomes A-tier once you have 3+ spells — cooldown reset starts mattering",
+        "lateGame": "S-tier for PvE — undisputed PvE meta with any fast-hitting weapon",
+        "pvp": "C-tier — harder to consistently land 8 hits on human opponents",
+        "pve": "S-tier — best PvE blood, cooldown reset makes it overpowered for mob and boss farming"
+      },
+      "bestWeapons": ["Reaper", "Longbow", "Crossbow"],
+      "synergy": "Cooldown reset on hit — more hits = more resets. Fast or multi-hit weapons maximize this. Reaper's wide AoE hits 3-5 enemies per swing, resetting cooldowns constantly.",
+      "relatedPage": "blood-types.html#scholar"
+    },
+    {
+      "id": "rogue",
+      "name": "Rogue",
+      "tier": { "pve": "B", "pvp": "S", "earlyGame": "C" },
+      "qualityThresholds": {
+        "any": { "bonus": "Movement speed +5%, crit chance +5%" },
+        "60": { "bonus": "Movement speed +10%, crit chance +10%" },
+        "90": { "bonus": "Movement speed +15%, crit chance +15%, armor-expose on crit (20-30% defense reduction for 6s)" }
+      },
+      "bonusSummary": "Armor-expose on crit + movement speed + crit chance",
+      "recommendedUsage": {
+        "earlyGame": "C-tier — armor-expose isn't available until 90%+ quality which is rare early",
+        "midGame": "B-tier — movement speed is nice but other bloods offer more at this stage",
+        "lateGame": "S-tier for PvP — armor-expose at 90%+ wins duels, dominates the PvP meta",
+        "pvp": "S-tier — best PvP blood, armor-expose amplifies ALL damage by 20-30%",
+        "pve": "B-tier — armor-expose is strong but Scholar's cooldown reset is better for PvE"
+      },
+      "bestWeapons": ["Claws", "Slashers", "Throwing Daggers"],
+      "synergy": "Armor-expose amplifies fast-hitting weapons. Flurry (Claws) hits 5-7 times in 1.5s — statistically at least one crit per use. Exposed armor = +20-30% damage from all sources for 6 seconds.",
+      "relatedPage": "blood-types.html#rogue"
+    },
+    {
+      "id": "warrior",
+      "name": "Warrior",
+      "tier": { "pve": "B", "pvp": "B", "earlyGame": "A" },
+      "qualityThresholds": {
+        "any": { "bonus": "Physical damage +8%" },
+        "60": { "bonus": "Physical damage +15%, 10% chance to block attacks" },
+        "90": { "bonus": "Physical damage +20%, 15% block chance, defense reduction on hit" }
+      },
+      "bonusSummary": "Physical damage + block chance + defense reduction",
+      "recommendedUsage": {
+        "earlyGame": "A-tier — reliable physical damage boost works at any quality level",
+        "midGame": "B-tier — solid but outshone by Brute (survival) and Scholar (cooldown)",
+        "lateGame": "B-tier — defense reduction helps sustained DPS but burst meta favors other bloods",
+        "pvp": "B-tier — solid frontline option, defense reduction beats tanky builds",
+        "pve": "B-tier — physical damage boost is straightforward but lacks Scholar's multiplicative power"
+      },
+      "bestWeapons": ["Sword", "Spear"],
+      "synergy": "Defense reduction for consistent melee DPS. Pairs best with sustained-damage weapons rather than burst weapons.",
+      "relatedPage": "blood-types.html#warrior"
+    },
+    {
+      "id": "creature",
+      "name": "Creature",
+      "tier": { "pve": "C", "pvp": "D", "earlyGame": "B" },
+      "qualityThresholds": {
+        "any": { "bonus": "Movement speed +5%, sun resistance +10%" },
+        "60": { "bonus": "Movement speed +10%, sun resistance +20%, health regen" },
+        "90": { "bonus": "Movement speed +15%, sun resistance +30%, strong health regen" }
+      },
+      "bonusSummary": "Movement speed + sun resistance + health regen",
+      "recommendedUsage": {
+        "earlyGame": "B-tier — movement speed helps exploration, sun resistance is useful pre-horse",
+        "midGame": "C-tier — utility only, outclassed by combat bloods once you have a horse",
+        "lateGame": "D-tier — no combat value at endgame",
+        "pvp": "D-tier — movement speed is irrelevant with mounts",
+        "pve": "C-tier — utility pick for exploration, not for combat"
+      },
+      "bestWeapons": ["Any (utility pick)"],
+      "synergy": "Movement speed and sun resistance — purely exploration utility. Swap to a combat blood before boss fights.",
+      "relatedPage": "blood-types.html#creature"
+    },
+    {
+      "id": "worker",
+      "name": "Worker",
+      "tier": { "pve": "D", "pvp": "D", "earlyGame": "C" },
+      "qualityThresholds": {
+        "any": { "bonus": "Resource yield +10%" },
+        "60": { "bonus": "Resource yield +20%, crafting speed +15%" },
+        "90": { "bonus": "Resource yield +30%, crafting speed +25%" }
+      },
+      "bonusSummary": "Resource yield + crafting speed",
+      "recommendedUsage": {
+        "earlyGame": "C-tier — resource boost helps with early material grind",
+        "midGame": "D-tier for combat — exclusively for resource farming",
+        "lateGame": "D-tier for combat — swap via Blood Hunger before harvesting, then swap back",
+        "pvp": "D-tier — no PvP value whatsoever",
+        "pve": "D-tier for combat — not a combat blood, use only for farming resources"
+      },
+      "bestWeapons": ["Any (resource pick)"],
+      "synergy": "Resource yield boost — not for combat builds. Best used via Blood Hunger: drain a Worker before harvesting nodes, then swap back to combat blood.",
+      "relatedPage": "blood-types.html#worker"
+    },
+    {
+      "id": "mutant",
+      "name": "Mutant",
+      "tier": { "pve": "C", "pvp": "D", "earlyGame": "N/A" },
+      "qualityThresholds": {
+        "any": { "bonus": "HP regen, damage resistance +5%" },
+        "60": { "bonus": "HP regen, damage resistance +10%, status effect duration -20%" },
+        "90": { "bonus": "HP regen, damage resistance +15%, status effect immunity" }
+      },
+      "bonusSummary": "HP regen + damage resistance + status immunity",
+      "recommendedUsage": {
+        "earlyGame": "N/A — Mutant blood sources are in late-game Oakveil content",
+        "midGame": "N/A — not accessible until Oakveil region",
+        "lateGame": "C-tier — situational hybrid option, niche counter-pick for status-heavy fights",
+        "pvp": "D-tier — outclassed by Rogue and Brute in their respective niches",
+        "pve": "C-tier — status immunity is useful against specific bosses but Scholar is still better"
+      },
+      "bestWeapons": ["Situational"],
+      "synergy": "Status effect immunity — niche counter-pick against bosses with heavy status effects. Strong hybrid option but not best-in-class for any role.",
+      "relatedPage": "blood-types.html#mutant"
+    }
+  ]
+}

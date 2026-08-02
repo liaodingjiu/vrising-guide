@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRFDL6T16D"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRFDL6T16D');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Rising Server Settings — Complete Configuration Reference | V Rising Guides</title>
+<meta name="description" content="Every V Rising server setting explained. ServerHostSettings.json and ServerGameSettings.json reference with PvP rules, harvest rates, castle limits.">
+<meta name="keywords" content="V Rising server settings, V Rising server config, V Rising ServerHostSettings, V Rising ServerGameSettings, V Rising server commands, V Rising PvP settings, V Rising harvest rate, V Rising castle settings">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vrisingguides.com/server/settings/">
+<meta property="og:title" content="V Rising Server Settings — Complete Configuration Reference">
+<meta property="og:description" content="Every V Rising server setting explained. ServerHostSettings.json and ServerGameSettings.json reference with PvP rules, harvest rates, castle limits.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vrisingguides.com/server/settings/">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="V Rising Server Settings — Complete Configuration Reference">
+<meta property="og:image" content="https://vrisingguides.com/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://vrisingguides.com/og-image.png">
+<meta name="twitter:description" content="Every V Rising server setting explained. ServerHostSettings.json and ServerGameSettings.json reference with PvP rules, harvest rates, castle limits.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet"><style>h1,.logo{font-family:'Orbitron',sans-serif}</style>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/shared.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "V Rising Server Settings — Complete Configuration Reference",
+  "description": "Every V Rising server setting explained. ServerHostSettings.json and ServerGameSettings.json complete reference with all configuration options for PvP, harvest, castle, and gameplay.",
+  "author": { "@type": "Person", "name": "Alex", "url": "https://vrisingguides.com/about.html" },
+  "datePublished": "2026-08-02", "dateModified": "2026-08-02",
+  "publisher": { "@type": "Organization", "name": "V Rising Guides" },
+  "mainEntityOfPage": "https://vrisingguides.com/server/settings/",
+  "isAccessibleForFree": true, "inLanguage": "en",
+  "thumbnailUrl": "https://vrisingguides.com/favicon.svg", "wordCount": 2600,
+  "about": { "@type": "Thing", "name": "V Rising", "sameAs": "https://en.wikipedia.org/wiki/V_Rising" }
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vrisingguides.com/"},{"@type":"ListItem","position":2,"name":"Server","item":"https://vrisingguides.com/server/"},{"@type":"ListItem","position":3,"name":"Settings","item":"https://vrisingguides.com/server/settings/"}]}
+</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xk8deme19b");</script>
+</head>
+<body>
+
+<div class="top-bar">V Rising Server Settings — Complete Configuration Reference. Updated <time datetime="2026-08-02">August 2, 2026</time>.</div>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner"><a href="/" class="logo">V Rising<span>Guides</span></a><div class="nav-right"><ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/builds/">Builds</a></li><li><a href="/castle/">Castle</a></li><li><a href="/server/">Server</a></li><li><a href="/boss-order.html">Boss Order</a></li><li><a href="/best-weapons.html">Best Weapons</a></li><li><a href="/beginner-guide.html">Beginner</a></li><li class="nav-more"><a href="/resources.html">More ▾</a><ul class="nav-dropdown"><li><a href="/resources.html">Resources</a></li><li><a href="/map.html">Map</a></li><li><a href="/servants.html">Servants</a></li><li><a href="/progression.html">Progression</a></li><li><a href="/whetstone.html">Whetstone</a></li><li><a href="/steam-deck.html">Steam Deck</a></li></ul></li></ul><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="sun">☀️</span><span class="moon">🌙</span></button></div></div>
+</nav>
+
+<main class="container">
+
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/server/">Server</a> / Settings</nav>
+
+<section class="hero">
+  <h1>V Rising Server Settings Reference</h1>
+  <p>Every setting that controls your server experience — these two JSON files are the entire control panel, from PvP rules to harvest rates.</p>
+</section>
+<nav class="toc" aria-label="Table of contents"><h3>What's on this page</h3><ol><li><a href="#host">ServerHostSettings.json</a></li><li><a href="#game">ServerGameSettings.json</a></li><li><a href="#presets">Preset Configurations</a></li><li><a href="#admin">Admin Commands</a></li></ol></nav><section class="section" id="host"><h2><span class="icon">⚙️</span> ServerHostSettings.json — Connection & Identity</h2><div class="prose"><table><thead><tr><th>Setting</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>Name</td><td>String</td><td>Server name in browser. Keep under 60 chars.</td></tr><tr><td>Port</td><td>Integer</td><td>Game UDP port. Default 9876.</td></tr><tr><td>QueryPort</td><td>Integer</td><td>Steam query. Must = Port + 1.</td></tr><tr><td>MaxConnectedUsers</td><td>Integer</td><td>Max 40. ~200MB RAM per player above 20.</td></tr><tr><td>Password</td><td>String</td><td>Empty=public. Set password = private.</td></tr><tr><td>ListOnMasterServer</td><td>Boolean</td><td>true=browser. false=Direct Connect only.</td></tr><tr><td>SaveName</td><td>String</td><td>World save identifier. Change for multiple worlds.</td></tr><tr><td>Secure</td><td>Boolean</td><td>VAC anti-cheat. Disable only for modded servers.</td></tr></tbody></table></div></section><section class="section" id="game"><h2><span class="icon">🎮</span> ServerGameSettings.json — Gameplay Rules</h2><div class="prose"><h3>Game Mode</h3><table><thead><tr><th>Setting</th><th>Description</th></tr></thead><tbody><tr><td>GameModeType</td><td>"PvE", "PvP", or "FullLootPvP"</td></tr><tr><td>CastleDamageMode</td><td>"Never", "Always", or "TimeRestricted"</td></tr><tr><td>ClanSize</td><td>1-4. Set 2 for competitive PvP.</td></tr><tr><td>BloodDrainModifier</td><td>1.0=normal. 0.5=slower (easier).</td></tr></tbody></table><h3>Resource Rates</h3><table><thead><tr><th>Setting</th><th>Description</th></tr></thead><tbody><tr><td>MaterialYieldModifier_Global</td><td>1.0=normal. 2.0=double harvest.</td></tr><tr><td>InventoryStacksModifier</td><td>2.0=double stacks (popular QoL).</td></tr><tr><td>CraftRateModifier</td><td>Higher=faster crafting.</td></tr><tr><td>DurabilityLossModifier</td><td>0=never degrades (PvE QoL).</td></tr></tbody></table><h3>Castle Limits</h3><table><thead><tr><th>Setting</th><th>Description</th></tr></thead><tbody><tr><td>CastleLimit</td><td>Max castles per player. Default 1.</td></tr><tr><td>FloorLimit</td><td>Max floor tiles. Default 250. Reduce for performance.</td></tr></tbody></table><p><a href="/server/" style="color:var(--green)">→ Server Hub with full reference</a></p></div></section><section class="section" id="presets"><h2><span class="icon">📋</span> Preset Configurations</h2><div class="prose"><h3>PvE Casual</h3><table><thead><tr><th>Setting</th><th>Value</th></tr></thead><tbody><tr><td>GameModeType</td><td>PvE</td></tr><tr><td>MaterialYieldModifier</td><td>2.0</td></tr><tr><td>InventoryStacksModifier</td><td>2.0</td></tr><tr><td>CraftRateModifier</td><td>1.5</td></tr><tr><td>DurabilityLossModifier</td><td>0.0</td></tr><tr><td>CastleDamageMode</td><td>Never</td></tr></tbody></table><h3>Hardcore PvP</h3><table><thead><tr><th>Setting</th><th>Value</th></tr></thead><tbody><tr><td>GameModeType</td><td>FullLootPvP</td></tr><tr><td>MaterialYieldModifier</td><td>1.0</td></tr><tr><td>DurabilityLossModifier</td><td>1.5</td></tr><tr><td>CastleDamageMode</td><td>Always</td></tr><tr><td>ClanSize</td><td>2</td></tr><tr><td>BloodDrainModifier</td><td>1.5</td></tr></tbody></table></div></section><section class="section" id="admin"><h2><span class="icon">👑</span> Admin Commands</h2><div class="prose"><p>Add Steam64 ID to <code>adminlist.txt</code>. Find at steamid.io.</p><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td>kick playername</td><td>Kick player</td></tr><tr><td>ban playername</td><td>Ban (adds to banlist.txt)</td></tr><tr><td>announce message</td><td>Server-wide broadcast</td></tr><tr><td>save</td><td>Force world save</td></tr><tr><td>shutdown</td><td>Graceful shutdown</td></tr></tbody></table><p><a href="/server/" style="color:var(--green)">→ Server Hub — full admin guide</a></p></div></section>
+<a href="/server/" class="ad-placeholder"><span class="rec-icon">→</span><span class="rec-body"><strong>Server Guide</strong><p>Complete server hub with dedicated setup, private server, and performance optimization.</p></span><span class="rec-arrow">→</span></a><div class="author-box"><div class="author-avatar">🧛</div><div class="author-info"><h4>Written by Alex</h4><p>V Rising Master player with 1,200+ hours in Vardoran. Every recommendation tested through multiple playthroughs.</p></div></div><div class="share-bar"><span>Share:</span><a href="#" target="_blank" rel="noopener" class="share-btn">𝕏 Twitter</a><a href="#" target="_blank" rel="noopener" class="share-btn">🔗 Reddit</a></div><div class="feedback-box"><p><strong>Helpful?</strong></p><div class="feedback-btns"><button class="feedback-btn" id="feedbackYes" onclick="handleFeedback('yes')">👍 Yes</button><button class="feedback-btn" id="feedbackNo" onclick="handleFeedback('no')">👎 No</button></div></div>
+</main>
+
+<footer>
+  <p>V Rising Guides — The independent V Rising resource. Not affiliated with Stunlock Studios.</p>
+  <p style="margin-top:8px">V Rising and all related content are trademarks of Stunlock Studios AB.</p>
+  <p style="margin-top:8px">
+    <a href="/about.html">About</a> &nbsp;|&nbsp;
+    <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+    <a href="/terms.html">Terms of Use</a> &nbsp;|&nbsp;
+    <a href="/contact.html">Contact</a> &nbsp;|&nbsp;
+    <a href="/sitemap.xml">Sitemap</a>
+  </p>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+<script src="/cookie-consent.js"></script>
+<script>
+(function() {
+  var toggle = document.getElementById('themeToggle');
+  var stored = localStorage.getItem('vrising-theme');
+  if (stored) document.documentElement.setAttribute('data-theme', stored);
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = (current === 'dark') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('vrising-theme', next);
+      if (typeof gtag === 'function') gtag('event', 'theme_toggle', { theme: next });
+    });
+  }
+  var btn = document.getElementById('backTop');
+  if (btn) {
+    window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 500); });
+    btn.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  }
+})();
+function handleFeedback(type) {
+  document.getElementById('feedbackYes').classList.toggle('voted', type === 'yes');
+  document.getElementById('feedbackNo').classList.toggle('voted', type === 'no');
+  if(window.clarity){window.clarity("event","feedback",type);}var fb=document.querySelector('.feedback-box p');if(fb)fb.innerHTML='<strong>Thanks! Your feedback helps us improve.</strong>';
+  if (typeof gtag === 'function') gtag('event', 'feedback', { type: type });
+}
+</script>
+</body>
+</html>

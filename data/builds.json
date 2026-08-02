@@ -1,0 +1,284 @@
+{
+  "$schema": "https://vrisingguides.com/data/schema/build.schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-02",
+  "description": "Structured build data for V Rising. Currently 4 defined builds covering PvE and PvP. Build entities combine weapon, blood type, armor, spells, and jewels into complete player recommendations.",
+  "builds": [
+    {
+      "id": "greatsword-brute-pve",
+      "slug": "greatsword-build",
+      "name": "Greatsword PvE Build",
+      "category": "PvE",
+      "gameMode": "PvE",
+      "playstyle": "Heavy melee burst damage",
+      "difficulty": "Low",
+      "currentPage": "greatsword-build.html",
+      "weapon": {
+        "primary": { "id": "greatsword", "name": "Greatsword (Sanguine tier)", "note": "Legendary variant from General's Greatsword is best-in-slot" }
+      },
+      "bloodType": {
+        "primary": { "id": "brute", "name": "Brute", "qualityRequired": "60%+ (ideally 90%+)", "reason": "Attack speed steroid directly compensates for Greatsword's slow swings. +Health bonus makes you tanky enough to trade hits." },
+        "alternatives": [
+          { "id": "scholar", "name": "Scholar", "tier": "A", "note": "Cooldown reset for more Q-spins. Better for PvE where you can consistently land 8 hits." },
+          { "id": "rogue", "name": "Rogue", "tier": "B", "note": "Armor-expose amplifies burst but lacks attack speed/tankiness. Viable only in coordinated PvP." },
+          { "id": "warrior", "name": "Warrior", "tier": "C", "note": "Defense reduction helps sustained DPS, but Greatsword plays in bursts." }
+        ]
+      },
+      "armor": {
+        "progression": [
+          { "gearScore": "0-15", "set": "Boneguard", "note": "Starting armor" },
+          { "gearScore": "15-30", "set": "Nightstalker", "note": "+Physical damage" },
+          { "gearScore": "30-50", "set": "Hollowfang", "note": "+Health, +Physical damage" },
+          { "gearScore": "50-70", "set": "Dawnthorn", "note": "Highest +Health in tier" },
+          { "gearScore": "70-91", "set": "Bloodmoon", "note": "Highest +Physical damage for PvE" },
+          { "gearScore": "91", "set": "Sanguine", "note": "Maximum all stats" }
+        ]
+      },
+      "spells": {
+        "travel": { "id": "veil-of-blood", "name": "Veil of Blood", "note": "Dash + heal through enemies" },
+        "basic1": { "id": "sanguine-coil", "name": "Sanguine Coil", "note": "Heal on hit — sustain for melee combat" },
+        "basic2": { "id": "chaos-volley", "name": "Chaos Volley", "note": "Ranged option for pulling bosses and disengage phases" },
+        "ultimate": { "id": "heart-strike", "name": "Heart Strike", "note": "Massive single-target burst + heal finisher" }
+      },
+      "combatRotation": [
+        "Opener: Chaos Volley (pull boss) → E (Lunge) close gap → Q (Spin Slash) initial burst",
+        "Damage Phase: Auto-attack x2 → charge heavy → dodge boss mechanic → repeat",
+        "Burst Window: E → Q → fully charged heavy → Heart Strike (deletes 20-30% HP in one window)",
+        "Sustain: Veil of Blood through boss when low HP → Sanguine Coil after dodge → back to rotation"
+      ],
+      "strengths": [
+        "Highest single-hit damage — charged heavy deals 250-400% weapon damage",
+        "Massive burst combo deletes 20-30% of boss HP in one window",
+        "You enjoy melee combat",
+        "You fight bosses frequently",
+        "You play solo — self-sufficient sustain and tankiness"
+      ],
+      "weaknesses": [
+        "Slow swing speed — vulnerable during charged attacks",
+        "Predictable in PvP — skilled opponents dodge charged heavy",
+        "Poor at multi-target sustained DPS",
+        "You prefer ranged combat",
+        "You want maximum PvP mobility"
+      ],
+      "bestFor": ["Solo PvE", "Boss Hunting", "Players who prefer patience and timing"],
+      "bossUsage": "Greatsword's charged heavy has hyper armor during final frames — you won't be interrupted. Time your charge to finish right as the boss's attack lands. You'll eat the hit but trade 400% weapon damage for it. With Brute's health bonus, you win every trade against non-boss enemies.",
+      "pvpUsage": null,
+      "relatedBuilds": [
+        { "id": "claw-rogue-pvp", "name": "Claw Build", "description": "For players who prefer aggression over patience", "page": "claw-build.html" },
+        { "id": "summoner-scholar-pve", "name": "Summoner Build", "description": "For players who want safe, minion-based PvE", "page": "summoner-build.html" },
+        { "id": "pvp-builds", "name": "PvP Builds", "description": "See all PvP meta builds including Greatsword PvP variant", "page": "pvp-build.html" }
+      ]
+    },
+    {
+      "id": "greatsword-brute-pvp",
+      "slug": "greatsword-build-pvp",
+      "name": "Greatsword PvP Build",
+      "category": "PvP",
+      "gameMode": "PvP",
+      "playstyle": "Heavy burst punisher",
+      "difficulty": "Medium",
+      "currentPage": "greatsword-build.html",
+      "weapon": {
+        "primary": { "id": "greatsword", "name": "Greatsword (Sanguine tier)", "note": "Legendary General's Greatsword for the +physical damage affix" }
+      },
+      "bloodType": {
+        "primary": { "id": "brute", "name": "Brute", "qualityRequired": "60%+", "reason": "Attack speed is even more important in PvP — you need to land your charged heavy before they dodge." }
+      },
+      "armor": {
+        "progression": [
+          { "gearScore": "0-30", "set": "Nightstalker", "note": "Early PvP" },
+          { "gearScore": "30-50", "set": "Hollowfang", "note": "First real PvP armor" },
+          { "gearScore": "50-70", "set": "Dawnthorn", "note": "Highest +Health — mandatory for PvP survival" },
+          { "gearScore": "70-91", "set": "Dawnthorn (keep) → Sanguine", "note": "Bloodmoon's +Damage is tempting but Dawnthorn's +HP keeps you alive" },
+          { "gearScore": "91", "set": "Sanguine", "note": "Endgame equalizer" }
+        ]
+      },
+      "spells": {
+        "travel": { "id": "veil-of-chaos", "name": "Veil of Chaos", "note": "Double cast Chaos Volley through clone" },
+        "basic1": { "id": "frost-barrier", "name": "Frost Barrier", "note": "Absorb return damage while charging heavy" },
+        "basic2": { "id": "chaos-volley", "name": "Chaos Volley", "note": "Ranged poke — 15-20% HP damage before engagement starts" },
+        "ultimate": { "id": "heart-strike", "name": "Heart Strike", "note": "Kill confirm on CC'd target without dodge" }
+      },
+      "combatRotation": [
+        "Poke Phase: Chaos Volley at range → Veil of Chaos → recast Volley (double pressure)",
+        "Setup: When they close in, pop Frost Barrier (they can't trade into barrier + charged heavy)",
+        "Catch: E (Lunge) when they try to disengage — 30% slow guarantees a partially charged heavy",
+        "Kill Confirm: Enemy below 40% HP, dodge burned, no barrier → E + Q + fully charged heavy + Heart Strike = dead"
+      ],
+      "strengths": [
+        "One full combo can 100-to-0 a squishy target",
+        "The threat of charged heavy is a psychological weapon — bait their dodge with cancel",
+        "Tanky enough to win trades against most builds"
+      ],
+      "weaknesses": [
+        "Gets kited by ranged builds if you miss Lunge",
+        "Predictable — skilled opponents will dodge your charged heavy",
+        "Struggles against fast weapons (Claws, Slashers) that poke and disengage"
+      ],
+      "bestFor": ["PvP raiding", "Castle sieges", "Punishing enemy mistakes"],
+      "bossUsage": null,
+      "pvpUsage": "Start charging a heavy attack, then cancel it with a dodge. 80% of opponents will burn their dodge reacting to the 'incoming heavy.' Now they have no dodge, and your actual heavy is still ready. The Greatsword is a psychological weapon — the threat of the charged heavy is often more valuable than the attack itself.",
+      "relatedBuilds": [
+        { "id": "greatsword-brute-pve", "name": "Greatsword PvE Build", "description": "Same weapon, different spell and armor setup", "page": "greatsword-build.html" },
+        { "id": "claw-rogue-pvp", "name": "Claw Build", "description": "For players who prefer aggression over patience", "page": "claw-build.html" }
+      ]
+    },
+    {
+      "id": "claw-rogue-pvp",
+      "slug": "claw-build",
+      "name": "Claw PvP Build — The Duelist",
+      "category": "PvP",
+      "gameMode": "PvP",
+      "playstyle": "Ultra-aggressive rushdown duelist",
+      "difficulty": "High",
+      "currentPage": "claw-build.html",
+      "weapon": {
+        "primary": { "id": "claws", "name": "Claws (Sanguine tier)", "note": "Legendary variant with +physical damage and +crit chance affixes" }
+      },
+      "bloodType": {
+        "primary": { "id": "rogue", "name": "Rogue", "qualityRequired": "90%+", "reason": "Armor expose on crit. Flurry hits 5-7 times — statistically at least one crit per use. Exposed armor = +20-30% damage from all sources for 6 seconds." }
+      },
+      "armor": {
+        "progression": [
+          { "gearScore": "0-30", "set": "Nightstalker", "note": "Early PvP" },
+          { "gearScore": "30-50", "set": "Hollowfang", "note": "Balanced mid-game" },
+          { "gearScore": "50-70", "set": "Dawnthorn", "note": "+Health for surviving trades" },
+          { "gearScore": "70-91", "set": "Dawnthorn → Sanguine", "note": "Keep Dawnthorn for HP until Sanguine" },
+          { "gearScore": "91", "set": "Sanguine", "note": "All-stat boost for endgame" }
+        ]
+      },
+      "spells": {
+        "travel": { "id": "veil-of-blood", "name": "Veil of Blood", "note": "Dash through enemy → heal. Second gap closer alongside Pounce (E)." },
+        "basic1": { "id": "chaos-volley", "name": "Chaos Volley", "note": "Ranged poke while Pounce is on cooldown" },
+        "basic2": { "id": "frost-barrier", "name": "Frost Barrier", "note": "Defensive layer. Pop before engaging — absorbs counter-burst." },
+        "ultimate": { "id": "heart-strike", "name": "Heart Strike", "note": "Finisher. E → Q → Heart Strike kills any target below 50% HP without defensive cooldowns." }
+      },
+      "combatRotation": [
+        "Poke: Chaos Volley at range. Walk at them aggressively — the threat of Pounce forces backpedal.",
+        "Engage: E (Pounce) from outside reaction range → immediate Q (Flurry). Flurry procs Rogue armor-expose.",
+        "Pressure: Auto-attack weave between Flurry hits. They will dodge — Veil of Blood catches them.",
+        "Reset: If they survive burst, disengage with Veil of Blood. Wait 8 seconds for E cooldown. Re-engage.",
+        "Claws win through repeated bursts, not one all-in."
+      ],
+      "strengths": [
+        "Longest gap closer in the game — engage from off-screen",
+        "Fastest on-hit trigger for Rogue procs",
+        "Stickiest weapon — target cannot escape without burning dodge + movement spell",
+        "Best 1v1 PvP weapon in the game"
+      ],
+      "weaknesses": [
+        "Squishy — no innate defense or sustain, dies fast if caught in CC",
+        "Highest skill floor of any V Rising weapon — bad Claw players feed",
+        "You prefer ranged combat",
+        "You're new to V Rising (start with Greatsword or Sword first)"
+      ],
+      "bestFor": ["PvP 1v1 duels", "Aggressive playstyle", "Expert players with 50+ hours"],
+      "bossUsage": "Surprisingly good at PvE — Flurry's rapid hits against a single boss trigger Scholar cooldown reset nearly instantly. Swap to Scholar blood for PvE.",
+      "pvpUsage": "Pounce (E) has nearly double the range of any other weapon's gap closer. You can engage from off-screen. The opponent can't react to what they can't see coming.",
+      "relatedBuilds": [
+        { "id": "claw-rogue-pve", "name": "Claw PvE Build", "description": "Same weapon, Scholar blood for PvE boss killing", "page": "claw-build.html" },
+        { "id": "greatsword-brute-pvp", "name": "Greatsword Build", "description": "For players who prefer patience and burst over aggression", "page": "greatsword-build.html" },
+        { "id": "pvp-builds", "name": "All PvP Builds", "description": "See the full PvP meta tier list", "page": "pvp-build.html" }
+      ]
+    },
+    {
+      "id": "claw-rogue-pve",
+      "slug": "claw-build-pve",
+      "name": "Claw PvE Build — Boss Killer Variant",
+      "category": "PvE",
+      "gameMode": "PvE",
+      "playstyle": "Aggressive boss rushdown",
+      "difficulty": "High",
+      "currentPage": "claw-build.html",
+      "weapon": {
+        "primary": { "id": "claws", "name": "Claws (Sanguine tier)", "note": "Same as PvP — raw damage is king" }
+      },
+      "bloodType": {
+        "primary": { "id": "scholar", "name": "Scholar", "qualityRequired": "60%+", "reason": "Flurry's 5-7 rapid hits trigger Scholar's cooldown reset on every use — near-instant spell resets against single bosses." }
+      },
+      "armor": {
+        "progression": [
+          { "gearScore": "50-70", "set": "Bloodmoon", "note": "+Spell power for Scholar synergy" },
+          { "gearScore": "91", "set": "Sanguine", "note": "Maximum all stats" }
+        ]
+      },
+      "spells": {
+        "travel": { "id": "veil-of-blood", "name": "Veil of Blood", "note": "Dash + heal" },
+        "basic1": { "id": "chaos-volley", "name": "Chaos Volley", "note": "Ranged damage" },
+        "basic2": { "id": "sanguine-coil", "name": "Sanguine Coil", "note": "Heal on hit" },
+        "ultimate": { "id": "heart-strike", "name": "Heart Strike", "note": "Burst + heal finisher" }
+      },
+      "combatRotation": ["Pounce (E) → Flurry (Q) → Scholar cooldown reset procs → repeat. With Flurry's rapid hits, Scholar resets spell cooldowns on nearly every Q use."],
+      "strengths": ["Rapid Scholar cooldown reset via Flurry multi-hit", "High mobility for dodging boss mechanics", "Excels at 1v1 boss encounters"],
+      "weaknesses": ["Short range — you're in boss melee range", "Squishy — less forgiving of mistakes than ranged builds", "Poor AoE clear for adds"],
+      "bestFor": ["Single-target boss killing", "Expert PvE players", "Speedrunning bosses"],
+      "bossUsage": "Flurry hits 5-7 times in 1.5 seconds. Each hit counts toward Scholar's 'every 8th hit resets cooldowns.' Against a single boss, this means your spells are available on nearly every Q cooldown.",
+      "pvpUsage": null,
+      "relatedBuilds": [
+        { "id": "claw-rogue-pvp", "name": "Claw PvP Build", "description": "Same weapon, Rogue blood for PvP", "page": "claw-build.html" },
+        { "id": "greatsword-brute-pve", "name": "Greatsword PvE Build", "description": "Easier melee boss killer for new players", "page": "greatsword-build.html" }
+      ]
+    },
+    {
+      "id": "summoner-scholar-pve",
+      "slug": "summoner-build",
+      "name": "Summoner PvE Build",
+      "category": "PvE",
+      "gameMode": "PvE",
+      "playstyle": "Minion commander — safe, passive damage",
+      "difficulty": "Low",
+      "currentPage": "summoner-build.html",
+      "weapon": {
+        "primary": { "id": "longbow", "name": "Longbow", "note": "Maximum range — stay 2 screens away. Your weapon is supplemental, minions are primary damage." },
+        "alternatives": [
+          { "id": "crossbow", "name": "Crossbow", "note": "For bosses with adds — AoE bolts" }
+        ]
+      },
+      "bloodType": {
+        "primary": { "id": "scholar", "name": "Scholar", "qualityRequired": "60%+", "reason": "Every 8 hits reset spell cooldowns. With Longbow hitting from range, this keeps summon spells available when minions die." }
+      },
+      "armor": {
+        "progression": [
+          { "gearScore": "50-70", "set": "Bloodmoon", "note": "+Spell power — summon damage scales with spell power" },
+          { "gearScore": "91", "set": "Sanguine", "note": "Maximum all stats" }
+        ]
+      },
+      "spells": {
+        "travel": { "id": "veil-of-blood", "name": "Veil of Blood", "note": "Dash + heal. Exclusively for dodging boss mechanics, never engaging." },
+        "summon1": { "id": "raise-skeleton", "name": "Raise Skeleton (x2)", "note": "2 permanent skeletons. Your frontline aggro tanks." },
+        "summon2": { "id": "summon-banshee", "name": "Summon Banshee", "note": "Ranged spellcaster, applies slow. Place behind skeletons." },
+        "ultimate": { "id": "army-of-the-dead", "name": "Army of the Dead", "note": "4-6 undead for 15 seconds. Your boss-killing cooldown. 90-second cooldown = 1-2 per boss fight." }
+      },
+      "combatRotation": [
+        "Pre-fight: Summon 2 skeletons + Banshee. Position Banshee 5-8 tiles behind skeletons.",
+        "Engage: Pull boss with Longbow. Let skeletons grab aggro first.",
+        "Sustain Phase: Maintain Longbow range. Resummon skeletons immediately when they die. Keep Banshee up.",
+        "Burst Window: Boss stationary or staggered → Army of the Dead. Continue Longbow fire.",
+        "Emergency: Boss targets you → Veil of Blood dodge → let minions reclaim aggro → return to range."
+      ],
+      "strengths": [
+        "Safest build in the game — minions tank while you stay at range",
+        "Most forgiving — mistakes don't kill you when minions eat the follow-up hit",
+        "Excellent for learning boss mechanics — watch and learn while minions deal damage",
+        "High ping doesn't matter — minions do the aiming",
+        "You struggle with boss mechanics and timing",
+        "You play on high ping or with performance issues"
+      ],
+      "weaknesses": [
+        "20-30% slower kill times than optimized direct-damage builds",
+        "Useless in PvP — enemy players ignore minions and rush you",
+        "Mana hungry — constant resummoning drains mana",
+        "Minions die to AoE — bosses with large AoE wipe all minions at once",
+        "You want maximum DPS and speed",
+        "You want a PvP-viable build"
+      ],
+      "bestFor": ["Learning new boss fights", "High-ping players", "Casual/safe PvE", "First-time Brutal difficulty"],
+      "bossUsage": "Boss aggro management is the key. Many boss mechanics target your minions instead of you — mechanics that would one-shot you just delete a skeleton that costs 20 mana to replace. Army of the Dead should be saved for when the boss is stationary or CC'd.",
+      "pvpUsage": null,
+      "relatedBuilds": [
+        { "id": "greatsword-brute-pve", "name": "Greatsword PvE Build", "description": "Faster boss kills at higher risk", "page": "greatsword-build.html" },
+        { "id": "claw-rogue-pve", "name": "Claw PvE Build", "description": "Aggressive melee alternative for expert players", "page": "claw-build.html" }
+      ]
+    }
+  ]
+}
