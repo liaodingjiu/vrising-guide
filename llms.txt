@@ -1,0 +1,55 @@
+# V Rising Guides
+> The ultimate V Rising resource — builds, castle design, and server setup. 1,200+ hours of player-tested data, not wiki rewrites.
+
+- [Home](https://vrisingguides.com/): V Rising Guides home — builds, castle design, and server setup at a glance
+
+## Getting Started
+- [Beginner's Guide](https://vrisingguides.com/beginner-guide): Everything new players need to know — first spawn, first castle, and early progression
+- [Boss Order](https://vrisingguides.com/boss-order): Optimal boss progression order — all 64 bosses from GS 0 to 91
+- [Progression Guide](https://vrisingguides.com/progression): Complete gear progression roadmap from Bone to Sanguine
+- [Map Guide](https://vrisingguides.com/map): Waygates, regions, and fast travel explained
+- [Resources Guide](https://vrisingguides.com/resources): Every material and where to farm it
+
+## Builds & Weapons
+- [Builds Hub](https://vrisingguides.com/builds/): All V Rising builds — PvE, PvP, and weapon-specific setups
+- [Best Build](https://vrisingguides.com/builds/best-build/): Top-tier build for current meta — PvE and PvP
+- [Best Weapons Tier List](https://vrisingguides.com/best-weapons): All 14 weapons ranked with stats and recommendations
+- [PvE Build](https://vrisingguides.com/builds/pve-build/): Optimized PvE build for solo, boss, and endgame
+- [Greatsword Build](https://vrisingguides.com/builds/greatsword-build/): Greatsword-focused build — spells, gear, and playstyle
+- [Claw Build](https://vrisingguides.com/builds/claw-build/): Dual claw attack speed build for PvP dueling
+- [Summoner Build](https://vrisingguides.com/builds/summoner-build/): Minion-based summoner build with best spells and gear
+- [PvP Build](https://vrisingguides.com/builds/pvp-build/): Competitive PvP build — weapons, blood type, and combat setup
+- [Boss Killer Build](https://vrisingguides.com/builds/boss-killer-build/): Maximum single-target damage for boss fights
+- [Mage Build](https://vrisingguides.com/builds/mage-build/): Spellcaster build — best magic DPS setup
+- [Solo Build](https://vrisingguides.com/builds/solo-build/): Self-sufficient build for solo players
+- [Beginner Build](https://vrisingguides.com/builds/beginner-build/): Easy-to-gear starter build for new players
+
+## Castle Building
+- [Castle Hub](https://vrisingguides.com/castle/): Castle guides overview — locations, layouts, and design
+- [Best Castle Locations](https://vrisingguides.com/castle/best-locations/): Top base locations ranked by resources and strategy — PvE, PvP, and solo
+- [Castle Layouts](https://vrisingguides.com/castle/layouts/): Optimal room plans and defensive floor designs
+- [Castle Design](https://vrisingguides.com/castle/design/): Aesthetic castle design ideas and building tips
+
+## Server & Multiplayer
+- [Server Hub](https://vrisingguides.com/server/): Server guides overview — setup, configuration, and private servers
+- [Dedicated Server Setup](https://vrisingguides.com/server/dedicated-server/): Complete step-by-step dedicated server hosting guide
+- [Private Server](https://vrisingguides.com/server/private-server/): Friends-only and co-op server setup
+- [Server Settings](https://vrisingguides.com/server/settings/): Full server configuration reference
+
+## Bosses
+- [Dracula Best Build](https://vrisingguides.com/boss/dracula-best-build/): Optimal build and strategy for defeating Dracula
+
+## Advanced Guides
+- [Blood Types Guide](https://vrisingguides.com/blood-types): Complete blood type guide — abilities, quality tiers, and best uses for every stage
+- [Armor Guide](https://vrisingguides.com/armor): All armor sets compared with stats, tiers, and crafting requirements
+- [Servants Guide](https://vrisingguides.com/servants): Servant conversion, types, and mission optimization
+- [Whetstone Guide](https://vrisingguides.com/whetstone): Fastest ways to farm and craft whetstones
+- [Fusion Forge Guide](https://vrisingguides.com/v-rising-fusion-forge/): How to unlock, craft, and use the Fusion Forge — weapon & jewel fusion
+- [Steam Deck Guide](https://vrisingguides.com/steam-deck): Playing V Rising on Steam Deck — settings, performance, and tips
+
+## Weapon Comparisons
+- [Greatsword vs Claws](https://vrisingguides.com/compare/greatsword-vs-claw/): Detailed comparison — which weapon build is better for your playstyle
+
+## About
+- [About V Rising Guides](https://vrisingguides.com/about): About the site and author — 1,200+ hours, every boss on Brutal
+- [Contact](https://vrisingguides.com/contact): Get in touch with V Rising Guides
