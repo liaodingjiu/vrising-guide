@@ -206,6 +206,15 @@
   <div class="hero-updated">Last updated: <time datetime="2026-08-16">August 16, 2026</time> — Invaders of Oakveil update</div>
 </section>
 
+<figure class="guide-figure">
+  <img src="/images/general/oakveil-update.jpg"
+       alt="V Rising Invaders of Oakveil update — the 1.1 patch that introduced the Fusion Forge and the Oakveil Woodlands"
+       width="1200" height="675"
+       class="hero-image"
+       loading="eager">
+  <figcaption>The Invaders of Oakveil update (Patch 1.1) added the Fusion Forge. Unlock it by defeating Dantos the Forgebinder in the new Oakveil Woodlands. Image: Stunlock Studios.</figcaption>
+</figure>
+
 <!-- Table of Contents -->
 <nav class="toc" aria-label="Table of contents">
   <h3>What's on this page</h3>
@@ -299,6 +308,74 @@
       <li><strong>You pick the attributes.</strong> The merged list is shown to you, and you select which ones the final item keeps. Nothing is random about <em>which</em> attributes carry over.</li>
       <li><strong>The attribute count is fixed.</strong> The fused item keeps the <em>same number of attributes</em> as the left-slot item originally had. Fusion is about swapping <em>better</em> attributes in, not adding more slots.</li>
     </ul>
+
+    <figure class="guide-figure">
+      <svg class="ff-diagram" viewBox="0 0 800 600" role="img" aria-labelledby="ff-diagram-title" width="780" style="max-width:100%;height:auto;display:block;margin:0 auto;">
+        <title id="ff-diagram-title">Fusion Forge mechanic — the left slot survives, the right slot is destroyed, and you choose which attributes the result keeps</title>
+        <defs>
+          <marker id="ff-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" style="fill:var(--text3);"></path>
+          </marker>
+        </defs>
+        <style>
+          .ff-diagram text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+          .ff-box { fill: var(--surface); stroke: var(--border); stroke-width: 1.5; }
+          .ff-donor { fill: var(--muted-bg); stroke: var(--border); stroke-width: 1.5; stroke-dasharray: 5 4; }
+          .ff-forge { fill: var(--green-l); stroke: var(--green); stroke-width: 1.5; }
+          .ff-result { fill: var(--surface); stroke: var(--green); stroke-width: 1.5; }
+          .ff-t { fill: var(--text); }
+          .ff-muted { fill: var(--text2); }
+          .ff-dim { fill: var(--text3); }
+          .ff-accent { fill: var(--green); }
+          .ff-red { fill: var(--red); }
+          .ff-gold { fill: var(--gold); }
+          .ff-arrow { stroke: var(--text3); stroke-width: 2; fill: none; marker-end: url(#ff-arrow); }
+          .ff-head { font-size: 14px; font-weight: 700; }
+          .ff-sub { font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+          .ff-item { font-size: 13px; font-weight: 700; }
+          .ff-attr { font-size: 12.5px; font-weight: 400; }
+          .ff-note { font-size: 12px; font-weight: 400; }
+        </style>
+
+        <!-- LEFT: keeper -->
+        <rect class="ff-box" x="50" y="28" width="320" height="184" rx="8"></rect>
+        <text class="ff-t ff-head" x="210" y="56" text-anchor="middle">LEFT SLOT</text>
+        <text class="ff-accent ff-sub" x="210" y="76" text-anchor="middle">KEEPER</text>
+        <line x1="72" y1="88" x2="348" y2="88" style="stroke:var(--border);stroke-width:1;"></line>
+        <text class="ff-gold ff-item" x="210" y="114" text-anchor="middle">Ancestral Sword</text>
+        <text class="ff-muted ff-attr" x="72" y="140">• +8% Physical Damage</text>
+        <text class="ff-muted ff-attr" x="72" y="161">• +5% Critical Chance</text>
+        <text class="ff-accent ff-sub" x="210" y="194" text-anchor="middle">✓ SURVIVES</text>
+
+        <!-- RIGHT: donor -->
+        <rect class="ff-donor" x="430" y="28" width="320" height="184" rx="8"></rect>
+        <text class="ff-muted ff-head" x="590" y="56" text-anchor="middle">RIGHT SLOT</text>
+        <text class="ff-dim ff-sub" x="590" y="76" text-anchor="middle">DONOR</text>
+        <line x1="452" y1="88" x2="728" y2="88" style="stroke:var(--border);stroke-width:1;"></line>
+        <text class="ff-dim ff-item" x="590" y="114" text-anchor="middle">Ancestral Sword</text>
+        <text class="ff-dim ff-attr" x="452" y="140">• +12% Attack Speed</text>
+        <text class="ff-dim ff-attr" x="452" y="161">• +3% Move Speed</text>
+        <text class="ff-red ff-sub" x="590" y="194" text-anchor="middle">✗ DESTROYED</text>
+
+        <!-- Arrows -->
+        <path class="ff-arrow" d="M210,212 L340,340"></path>
+        <path class="ff-arrow" d="M590,212 L460,340"></path>
+        <path class="ff-arrow" d="M400,420 L400,484"></path>
+
+        <!-- Forge -->
+        <rect class="ff-forge" x="250" y="340" width="300" height="80" rx="8"></rect>
+        <text class="ff-accent ff-head" x="400" y="372" text-anchor="middle">FUSION FORGE</text>
+        <text class="ff-muted ff-note" x="400" y="398" text-anchor="middle">merge both lists → pick what to keep</text>
+
+        <!-- Result -->
+        <rect class="ff-result" x="160" y="484" width="480" height="112" rx="8"></rect>
+        <text class="ff-accent ff-head" x="400" y="512" text-anchor="middle">RESULT<tspan class="ff-muted ff-note">  · left item survives</tspan></text>
+        <text class="ff-muted ff-attr" x="182" y="540">• +8% Physical Damage</text>
+        <text class="ff-accent ff-attr" x="182" y="562">• +12% Attack Speed  ← from donor</text>
+        <text class="ff-muted ff-attr" x="182" y="584">• +5% Critical Chance</text>
+      </svg>
+      <figcaption>How fusion works: put your keeper in the <strong>left</strong> slot and the donor in the <strong>right</strong>. The forge merges both attribute lists and lets you pick — the right-slot item is then destroyed, and the left item carries your chosen attributes (including the donor's better ones).</figcaption>
+    </figure>
 
     <p><strong>The Fusion Forge does not craft weapons and does not repair shattered shards.</strong> A shattered Legendary weapon shard will not become a weapon here — that's the <strong>Ancestral Forge's</strong> job. The Fusion Forge only touches <strong>already-restored, usable</strong> Ancestral weapons and jewels. Here's the full difference:</p>
 
