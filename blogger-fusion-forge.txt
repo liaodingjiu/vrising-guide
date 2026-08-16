@@ -1,0 +1,49 @@
+V Rising Fusion Forge Guide: How to Unlock, Location, and How Fusion Works
+
+How to Unlock Fusion Forge in V Rising
+
+The Fusion Forge unlocks by defeating Dantos the Forgebinder, a Level 82 V Blood boss. You'll find him in the Venom Blades Bastion, in the Oakveil Woodlands — the zone added in the Invaders of Oakveil update.
+
+Defeating Dantos unlocks two things at once: the Fusion Forge structure itself, and the Ember Glass crafting recipe. Ember Glass is the material you spend on every fusion, so both unlocks come together.
+
+Fusion Forge Location and Crafting Requirements
+
+The Fusion Forge is not a fixed world location — it's a structure you build inside your own castle. Once unlocked, place it like any other workstation.
+
+Crafting requirements:
+
+1 Primal Blood Essence
+12 Ember Glass
+16 Dark Silver Ingot
+
+Primal Blood Essence is refined at the Blood Press (from Exquisite Hearts), not a raw drop. Ember Glass is made at the Advanced Furnace from 8 Venom Sap and 20 Emery.
+
+Room bonuses matter. Place the forge in a Confined Castle Room for +25% crafting speed, and put it on Forge Flooring to cut material costs by 25% (each fusion drops from 12 to 9 Ember Glass).
+
+How Fusion Forge Works
+
+The Fusion Forge has two input slots, and they are not equal. The left slot holds the item that survives. The right slot holds the item that is destroyed.
+
+When you fuse, the forge merges the attribute lists of both items into one, then you pick which attributes the final item keeps. The result keeps the same number of attributes as the left-slot item — you are swapping better attributes in, not stacking more. If both items share the same attribute, only the higher-level version is offered.
+
+Fusion Forge Weapon and Jewel Fusion Guide
+
+Weapons: fuse two Ancestral weapons. Note that the Fusion Forge only accepts already-restored, usable weapons. If you have a shattered Legendary weapon shard, restore it first at the Ancestral Forge (3 Onyx Tears, unlocked by Raziel the Shepherd, Lv 57) before fusing.
+
+Jewels: fuse two jewels for the same spell. The same left/right rules apply.
+
+Steps: place your keeper in the left slot, the donor in the right slot, review the merged attribute list, pick your attributes, then confirm. Double-check your slots before confirming — there is no undo.
+
+Best Fusion Forge Builds and Tips
+
+For placement, combine the two room bonuses: Confined Castle Room for speed plus Forge Flooring for the material discount. That is the most efficient setup for repeat fusions.
+
+For materials, two farming tips: Emery nodes in the northwest Oakveil Woodlands explode if you mine them too fast, so mine slowly. Venom Sap drops from Corrupted Treants and the Carvers Logging Outpost.
+
+Finally, budget Ember Glass before you start. Each fusion costs 12 Ember Glass (9 with Forge Flooring), on top of the 12 spent building the forge itself. Stock up before you begin a fusion session.
+
+For the complete Fusion Forge guide — exact recipes, Ember Glass farming routes, and a full Fusion Forge vs Ancestral Forge comparison:
+
+https://vrisingguides.com/v-rising-fusion-forge/?utm_source=blogger&utm_medium=referral&utm_campaign=fusion-forge
+
+Source: https://vrising.fandom.com/wiki/Fusion_Forge
