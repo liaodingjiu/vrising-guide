@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRFDL6T16D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RRFDL6T16D');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V Rising Mods — Best Mods &amp; How to Install | V Rising Guides</title>
+<meta name="description" content="The best V Rising mods for servers and solo players — how to install with r2modman or BepInEx, plus QoL, server, and admin mods that work in 2026.">
+<meta name="keywords" content="v rising mods, v rising mods guide, how to install v rising mods, best v rising mods, v rising mod manager, v rising mods thunderstore, v rising mods bepinex, v rising server mods, v rising mods download, v rising mod configuration">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vrisingguides.com/v-rising-mods/">
+<meta property="og:title" content="V Rising Mods — Best Mods &amp; How to Install (2026)">
+<meta property="og:description" content="The best V Rising mods for servers and solo players. Install with r2modman or BepInEx, plus QoL, server, and admin mods that still work on the 1.1 Oakveil build.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vrisingguides.com/v-rising-mods/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="V Rising Mods — Best Mods &amp; How to Install (2026)">
+<meta property="og:image" content="https://vrisingguides.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://vrisingguides.com/og-image.png">
+<meta name="twitter:description" content="Install V Rising mods with r2modman or BepInEx. QoL, server, and admin mods that still work on the 1.1 Oakveil build.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/shared.css">
+
+<!-- Schema.org JSON-LD: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "V Rising Mods Guide (2026): Best Mods &amp; How to Install",
+  "description": "The complete V Rising mods guide. Covers how to install mods with r2modman or BepInEx (solo and dedicated servers), the best quality-of-life, server, and admin mods that still work on the 1.1 Invaders of Oakveil build, and a mod configuration and troubleshooting reference.",
+  "author": {
+    "@type": "Person",
+    "name": "Alex",
+    "description": "V Rising Master player with 1,200+ hours in Vardoran. Every boss killed on Brutal difficulty across multiple playthroughs. Modded and dedicated server setup tested across full playthroughs.",
+    "url": "https://vrisingguides.com/about.html"
+  },
+  "datePublished": "2026-08-16",
+  "dateModified": "2026-08-16",
+  "publisher": {
+    "@type": "Organization",
+    "name": "V Rising Guides"
+  },
+  "mainEntityOfPage": "https://vrisingguides.com/v-rising-mods/",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "thumbnailUrl": "https://vrisingguides.com/favicon.svg",
+  "wordCount": 1790,
+  "about": {
+    "@type": "Thing",
+    "name": "V Rising",
+    "sameAs": "https://en.wikipedia.org/wiki/V_Rising"
+  }
+}
+</script>
+
+<!-- Schema.org JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vrisingguides.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Mods Guide", "item": "https://vrisingguides.com/v-rising-mods/" }
+  ]
+}
+</script>
+
+<!-- Schema.org JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are V Rising mods allowed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stunlock Studios is fine with mods that do not grant explicit PvP advantages, as long as you do not run them on official servers. Keep gameplay-affecting mods to your own server or solo world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do V Rising mods work on the 1.1 Invaders of Oakveil update?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but only mods updated for the current build. Older mods — like the pre-2026 camera mod — are abandoned and will not load. Always check the mod's last-updated date against the current patch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best V Rising mod manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "r2modman, also known as the Thunderstore Mod Manager. It handles profiles, dependencies, and launching the game modded, and it has a built-in config editor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I download V Rising mods?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thunderstore (thunderstore.io/c/v-rising) is the primary hub; Nexus Mods hosts a smaller selection plus the Generic Mod Loader alternative. Avoid third-party download sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run mods on a dedicated server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the manual BepInEx install (the winhttp.dll + doorstop_config.ini method) and place plugin .dll files in BepInEx/plugins. A modded server does not show up in the vanilla server browser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do mods work in PvP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quality-of-life mods are generally fine, but disable camera and visual mods like RetroCamera in competitive PvP, and never use mods that grant gameplay advantages on shared servers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to reinstall mods after every patch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily, but you do need to check. Patches often break mods that touch changed systems, so verify each mod's Thunderstore page for a compatible update before launching after a major update."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are V Rising mods safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only when you download from Thunderstore or Nexus Mods. Stick to mods with a recent update and a reasonable number of downloads, and treat anything from an unknown third-party site as untrusted."
+      }
+    }
+  ]
+}
+</script>
+<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xk8deme19b");</script>
+</head>
+<body>
+
+<div class="top-bar">
+  V Rising Mods Guide 2026 — Best Mods &amp; How to Install. Updated <time datetime="2026-08-16">August 16, 2026</time>.
+</div>
+
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo">V Rising<span>Guides</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/builds/">Builds</a></li>
+        <li><a href="/castle/">Castle</a></li>
+        <li><a href="/server/">Server</a></li>
+        <li><a href="/boss-order.html">Boss Order</a></li>
+        <li><a href="/best-weapons.html">Best Weapons</a></li>
+        <li><a href="/beginner-guide.html">Beginner</a></li>
+        <li class="nav-more">
+          <a href="/resources.html">More ▾</a>
+          <ul class="nav-dropdown">
+            <li><a href="/resources.html">Resources</a></li>
+            <li><a href="/map.html">Map</a></li>
+            <li><a href="/servants.html">Servants</a></li>
+            <li><a href="/progression.html">Progression</a></li>
+            <li><a href="/whetstone.html">Whetstone</a></li>
+            <li><a href="/v-rising-fusion-forge/">Fusion Forge</a></li>
+            <li><a href="/v-rising-mods/">Mods</a></li>
+            <li><a href="/steam-deck.html">Steam Deck</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> / Mods Guide
+</nav>
+
+<section class="hero">
+  <h1>V Rising Mods</h1>
+  <p>V Rising has a small but active modding scene built on <strong>BepInEx</strong>, and it is the fastest way to fix the game's sharpest edges: a real third-person camera, auto-stack, admin tools, and even custom world bosses. The catch is that mods break every time Stunlock pushes a patch, so <strong>which mods still work</strong> matters more than which mods exist. Everything below runs on the current <strong>1.1 "Invaders of Oakveil"</strong> build.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="val">BepInEx</div><div class="lbl">Mod Framework</div></div>
+    <div class="hero-stat"><div class="val">2</div><div class="lbl">Install Paths</div></div>
+    <div class="hero-stat"><div class="val">13+</div><div class="lbl">Mods Covered</div></div>
+    <div class="hero-stat"><div class="val">1.1</div><div class="lbl">Oakveil Build</div></div>
+  </div>
+  <div class="hero-updated">Last updated: <time datetime="2026-08-16">August 16, 2026</time> — Invaders of Oakveil update</div>
+</section>
+
+<!-- Table of Contents -->
+<nav class="toc" aria-label="Table of contents">
+  <h3>What's on this page</h3>
+  <ol>
+    <li><a href="#best-mods">Best V Rising Mods for Servers and Solo Players</a></li>
+    <li><a href="#install">How to Install V Rising Mods</a></li>
+    <li><a href="#qol">Best Quality of Life Mods</a></li>
+    <li><a href="#server-mods">Best Server Mods for V Rising</a></li>
+    <li><a href="#config">V Rising Mod Configuration Guide</a></li>
+    <li><a href="#faq">V Rising Mods FAQ</a></li>
+  </ol>
+</nav>
+
+<a href="/server/dedicated-server/" class="ad-placeholder"><span class="rec-icon">🖥️</span><span class="rec-body"><strong>Related: Dedicated Server Setup</strong><p>Most V Rising mods run server-side. See the full dedicated server setup that BepInEx installs on top of.</p></span><span class="rec-arrow">→</span></a>
+
+<!-- SECTION 1: Best Mods -->
+<section class="section" id="best-mods">
+  <h2><span class="icon">🔧</span> Best V Rising Mods for Servers and Solo Players</h2>
+  <p class="section-desc">BepInEx loads them, Wetstone powers them, and Thunderstore hosts them. Here's the shortlist that actually works in 2026.</p>
+
+  <div class="prose">
+    <p>Everything here runs on <strong>BepInEx</strong> (the Unity plugin loader) and <strong>Wetstone</strong> (the framework most V Rising mods build on). Install both first — every mod below assumes they are already in place.</p>
+
+    <h3>V Rising mods download</h3>
+    <p>Two sites hold essentially all of the V Rising mods worth installing:</p>
+    <ul>
+      <li><strong>Thunderstore</strong> (thunderstore.io/c/v-rising) — the primary hub. Almost every active mod lives here, and it pairs with the r2modman mod manager for one-click installs.</li>
+      <li><strong>Nexus Mods</strong> (nexusmods.com/vrising) — a smaller selection, plus the standalone <strong>Generic Mod Loader</strong> framework for players who want an alternative to BepInEx.</li>
+    </ul>
+    <p>Download from these two and nowhere else. Random "free mod" sites repackage old plugins or bundle malware, and a mod last updated for Gloomrot will not load on the current Oakveil build.</p>
+
+    <h3>V Rising gameplay mods</h3>
+    <p>These change how the game actually plays rather than just smoothing the edges:</p>
+    <ul>
+      <li><strong>BloodyBoss</strong> (by Trodi) — a full V Blood world-boss system with dynamic scaling, custom mechanics, ability discovery, and a companion desktop tool called BloodyBossConfig. If you want to remix existing bosses or build your own, this is the centerpiece. It pairs naturally with knowing the <a href="/boss-order.html">V Rising boss order</a>.</li>
+      <li><strong>RetroCamera</strong> — the current camera mod for 2026, replacing the older camera mod that was abandoned. It turns V Rising from its isometric view into first- or third-person: press <code>[</code> to toggle the mod, <code>]</code> to toggle the action camera, and the scroll wheel to zoom. Excellent for solo PvE and walking through a <a href="/castle/">castle</a> you spent hours building; disable it for competitive PvP.</li>
+      <li><strong>KindredPortals</strong> and <strong>KindredArenas</strong> — player teleportation portals and custom arenas, mostly useful if you run a community server.</li>
+      <li><strong>KindredSchematics</strong> — a castle-schematic mod for blueprinting builds, useful alongside our <a href="/castle/layouts/">castle layout guide</a>.</li>
+    </ul>
+
+    <div class="table-wrapper" style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr><th>Mod</th><th>What it does</th><th>Solo</th><th>Server</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>BloodyBoss</strong></td><td>Custom world bosses + config tool</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td><strong>RetroCamera</strong></td><td>First/third-person camera</td><td>Yes</td><td>Avoid in PvP</td></tr>
+        <tr><td><strong>KindredPortals</strong></td><td>Teleportation portals</td><td>Optional</td><td>Yes</td></tr>
+        <tr><td><strong>KindredArenas</strong></td><td>Custom PvP arenas</td><td>No</td><td>Yes</td></tr>
+        <tr><td><strong>KindredSchematics</strong></td><td>Castle building schematics</td><td>Yes</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<a href="/boss-order.html" class="ad-placeholder"><span class="rec-icon">⚔️</span><span class="rec-body"><strong>Related: V Rising Boss Order</strong><p>BloodyBoss lets you remix world bosses. See the full boss order and where each V Blood sits in the endgame.</p></span><span class="rec-arrow">→</span></a>
+
+<!-- SECTION 2: Install -->
+<section class="section" id="install">
+  <h2><span class="icon">⬇️</span> How to Install V Rising Mods</h2>
+  <p class="section-desc">Two paths: the mod manager (easiest, for solo) and manual install (required for dedicated servers). Both start with BepInEx.</p>
+
+  <div class="prose">
+    <h3>V Rising mod manager</h3>
+    <p>The easiest way is <strong>r2modman</strong>, also branded as the Thunderstore Mod Manager. It is a desktop application that handles profiles, dependencies, and launching the game modded for you.</p>
+    <ol>
+      <li>Download r2modman from Thunderstore and run the setup. Do not install it inside the game folder — it is an app, not a mod.</li>
+      <li>Open r2modman, select <strong>V Rising</strong>, and create a profile.</li>
+      <li>In the <strong>Get Mods / Online</strong> tab, install the <strong>BepInExPack_V_Rising</strong> dependency first.</li>
+      <li>Browse and install mods, choosing <strong>Download with dependencies</strong> so required packages come along automatically.</li>
+      <li>Click <strong>Start modded</strong> to launch V Rising with everything loaded.</li>
+    </ol>
+    <p>r2modman also ships a built-in <strong>Config editor</strong>, which is the fastest way to tweak mod settings without touching raw files.</p>
+
+    <h3>How to install V Rising mods</h3>
+    <p>For a dedicated server — or if you simply prefer manual control — install BepInEx by hand. This is the step most first-time server admins get wrong, so follow the order exactly.</p>
+    <ol>
+      <li>Download <strong>BepInExPack_V_Rising (x64)</strong> from Thunderstore and extract it. You will get a <code>BepInEx</code> folder plus two files: <code>winhttp.dll</code> and <code>doorstop_config.ini</code>.</li>
+      <li>For a server, upload all three to the server root, directly next to <code>VRisingServer.exe</code>. For solo play, place them in <code>Steam\steamapps\common\VRising</code>. The <code>winhttp.dll</code> file must sit at the root or BepInEx will not inject.</li>
+      <li>Start the game or server once to generate the <code>BepInEx/plugins</code> and <code>BepInEx/config</code> folders. Look for <code>BepInEx 5.x - Initialized</code> and <code>Chainloader started</code> in the log.</li>
+      <li>Drop each mod's <code>.dll</code> directly into <code>BepInEx/plugins</code> — not raw ZIP files and not inside subfolders. If a mod ships a <code>patchers</code> folder, place it in <code>BepInEx/patchers</code>.</li>
+      <li>Restart and confirm each mod logs <code>[BepInEx] Loading [ModName]</code>.</li>
+    </ol>
+    <div class="tip-box">
+      <strong>Three habits that prevent most mod disasters:</strong><br>
+      ✓ Back up your save (or server files) before installing anything — a bad mod can corrupt a world.<br>
+      ✓ Add mods one at a time and launch between each, so when something breaks you know exactly which one did it.<br>
+      ✓ If you use r2modman, always launch through <strong>Start modded</strong> — launching from Steam normally skips BepInEx and none of your mods load.<br>
+      ✓ Know which side a mod runs on: <strong>server-side</strong> mods only need installing on the server; <strong>client-side</strong> mods (camera, UI) need every player to install them too.
+    </div>
+    <p>One server caveat to know up front: a modded server does not appear in the vanilla server browser, so players connect through Direct Connect or a modded-server browser. Our <a href="/server/dedicated-server/">dedicated server guide</a> walks through the base setup that this builds on top of.</p>
+  </div>
+</section>
+
+<a href="/resources.html" class="ad-placeholder"><span class="rec-icon">⛏️</span><span class="rec-body"><strong>Related: Complete Resource Farming Guide</strong><p>Auto-stack and faster-crafting mods shine on big material runs. See what you'll be farming at every tier.</p></span><span class="rec-arrow">→</span></a>
+
+<!-- SECTION 3: QoL -->
+<section class="section" id="qol">
+  <h2><span class="icon">✨</span> Best Quality of Life Mods</h2>
+  <p class="section-desc">The reason most players bother modding at all — and the safest place to start.</p>
+
+  <div class="prose">
+    <p>Quality-of-life mods are the reason most players bother modding at all, and they are the safest place to start because they rarely touch combat balance.</p>
+    <ul>
+      <li><strong>OkBruh</strong> — a grab-bag of small quality-of-life fixes.</li>
+      <li><strong>KindredCommands</strong> — the player-facing command pack (give, teleport, weather, time) that goes well beyond admin use.</li>
+      <li><strong>Auto-stack and faster-crafting plugins</strong> — the two fixes players ask for most, and a huge time-saver if you run large material loops through our <a href="/resources.html">resource farming guide</a>.</li>
+      <li><strong>ServerLaunchFix</strong> — lets you run server-side mods in single-player so you can test before pushing to the live server.</li>
+    </ul>
+    <p>If you play solo, the <strong>RetroCamera</strong> mod above is the single biggest quality-of-life upgrade — the first/third-person camera alone is worth the BepInEx install.</p>
+  </div>
+</section>
+
+<!-- SECTION 4: Server Mods -->
+<section class="section" id="server-mods">
+  <h2><span class="icon">🖥️</span> Best Server Mods for V Rising</h2>
+  <p class="section-desc">Server-side plugins and admin tools that turn a vanilla server into one you can actually manage.</p>
+
+  <div class="prose">
+    <h3>Best V Rising server mods</h3>
+    <p>These are the server-side plugins that make running a community easier, and most of them are hard dependencies for other mods:</p>
+    <ul>
+      <li><strong>VampireCommandFramework (VCF)</strong> and <strong>BloodyCore</strong> — foundation libraries that many server mods require; install them even if you never use them directly.</li>
+      <li><strong>TheCheese</strong> — anti-cheat and server utilities for keeping a public server healthy.</li>
+      <li><strong>KindredLogistics</strong> — storage and logistics tooling for admins who manage a lot of player chests.</li>
+    </ul>
+
+    <h3>V Rising admin mods</h3>
+    <p>Admin tooling is where the modded server experience really separates from vanilla:</p>
+    <ul>
+      <li><strong>KindredCommands</strong> — the standard admin command pack. Give, teleport, weather, and time controls are all typed in the <strong>in-game chatbox</strong>, not the server console.</li>
+      <li><strong>BloodCraftHub</strong> — a unified client UI that surfaces KindredCommands and KindredLogistics in one panel.</li>
+    </ul>
+    <p>Two details that trip up new admins: admin-restricted commands need your SteamID added to <code>adminlist.txt</code> (one per line, no commas) followed by the <code>adminauth</code> command, and all of this lives under <code>VRisingDedicatedServer\save-data\Settings</code>. Our <a href="/server/settings/">server settings guide</a> covers the full list of config options.</p>
+  </div>
+</section>
+
+<a href="/server/settings/" class="ad-placeholder"><span class="rec-icon">⚙️</span><span class="rec-body"><strong>Related: Server Settings Guide</strong><p>Admin commands and mod config both live under server settings. See every option you can tune.</p></span><span class="rec-arrow">→</span></a>
+
+<!-- SECTION 5: Config -->
+<section class="section" id="config">
+  <h2><span class="icon">🛠️</span> V Rising Mod Configuration Guide</h2>
+  <p class="section-desc">Config files, the admin list, and the troubleshooting moves that save hours.</p>
+
+  <div class="prose">
+    <p>Most mods drop their settings into <code>BepInEx/config/</code>, one folder per mod, usually as JSON or INI files. Three things will save you hours:</p>
+    <ol>
+      <li><strong>Use r2modman's Config editor</strong> for solo play — it turns raw files into a form you can change safely.</li>
+      <li><strong>Validate JSON.</strong> A single malformed JSON config silently stops a mod from loading. If a mod stops working after you edit its config, paste the file into a JSON linter before you touch anything else.</li>
+      <li><strong>Know your admin files.</strong> For admin mods, <code>adminlist.txt</code> holds SteamIDs one per line, and <code>adminauth</code> enables the commands in-game.</li>
+    </ol>
+
+    <h3>Troubleshooting quick reference</h3>
+    <div class="table-wrapper" style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mod doesn't load</td><td><code>.dll</code> not in <code>BepInEx/plugins</code>, or BepInEx never initialized</td><td>Put the <code>.dll</code> directly in <code>plugins</code> (no subfolders, no ZIPs) and check the log for <code>Chainloader started</code></td></tr>
+        <tr><td>Server crashes after adding a mod</td><td>Version conflict or missing dependency</td><td>Remove the newest <code>.dll</code> and retest; add mods one at a time so the culprit is obvious</td></tr>
+        <tr><td>"Fatal error. System.AccessViolationException"</td><td>Antivirus blocking BepInEx</td><td>Allow the exception in your AV and restart</td></tr>
+        <tr><td>Mod worked before a patch, now broken</td><td>Patch changed the systems the mod touches</td><td>Check the mod's Thunderstore page for a 1.1-compatible update</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>One thing worth internalizing: after a patch, the mods that break first are the ones that touch combat or the UI — small quality-of-life plugins usually survive longer. Check each mod's Thunderstore page for a 1.1-compatible build before you launch, and plan a short maintenance window if you run a modded server.</p>
+  </div>
+</section>
+
+<!-- SECTION 6: FAQ -->
+<section class="section" id="faq">
+  <h2><span class="icon">❓</span> V Rising Mods FAQ</h2>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>Are V Rising mods allowed?</summary>
+      <div class="faq-a">Stunlock Studios is fine with mods that do not grant explicit PvP advantages, as long as you do not run them on official servers. Keep gameplay-affecting mods to your own server or solo world.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do V Rising mods work on the 1.1 "Invaders of Oakveil" update?</summary>
+      <div class="faq-a">Yes, but only mods updated for the current build. Older mods — like the pre-2026 camera mod — are abandoned and will not load. Always check the mod's last-updated date against the current patch.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What is the best V Rising mod manager?</summary>
+      <div class="faq-a"><strong>r2modman</strong>, also known as the Thunderstore Mod Manager. It handles profiles, dependencies, and launching the game modded, and it has a built-in config editor.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Where do I download V Rising mods?</summary>
+      <div class="faq-a"><strong>Thunderstore</strong> is the primary hub; <strong>Nexus Mods</strong> hosts a smaller selection plus the Generic Mod Loader alternative. Avoid third-party download sites. <a href="#best-mods" style="color:var(--green)">Download guide →</a></div>
+    </details>
+    <details class="faq-item">
+      <summary>Can I run mods on a dedicated server?</summary>
+      <div class="faq-a">Yes. Use the manual BepInEx install (the <code>winhttp.dll</code> + <code>doorstop_config.ini</code> method) and place plugin <code>.dll</code> files in <code>BepInEx/plugins</code>. Remember that a modded server does not show up in the vanilla browser. <a href="#install" style="color:var(--green)">Server install steps →</a></div>
+    </details>
+    <details class="faq-item">
+      <summary>Do mods work in PvP?</summary>
+      <div class="faq-a">Quality-of-life mods are generally fine, but disable camera and visual mods like RetroCamera in competitive PvP, and never use mods that grant gameplay advantages on shared servers.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do I need to reinstall mods after every patch?</summary>
+      <div class="faq-a">Not necessarily, but you do need to check. Patches often break mods that touch changed systems, so verify each mod's Thunderstore page for a compatible update before launching after a major update.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Are V Rising mods safe?</summary>
+      <div class="faq-a">Only when you download from Thunderstore or Nexus Mods. Stick to mods with a recent update and a reasonable number of downloads, and treat anything from an unknown third-party site as untrusted.</div>
+    </details>
+  </div>
+</section>
+
+<div class="cta-box">
+  <h3>Install BepInEx. Grab a Few Mods. Stop Settling for Vanilla.</h3>
+  <p>V Rising mods are the difference between a good game and a perfect one for your playstyle. Start with a QoL mod, then add admin tools once you run a server. Bookmark this page — we update the mod shortlist with every V Rising patch.</p>
+</div>
+
+<!-- Author Box -->
+<div class="author-box">
+  <div class="author-avatar">🧛</div>
+  <div class="author-info">
+    <h4>Written by Alex</h4>
+    <p>V Rising Master player with 1,200+ hours in Vardoran. Every boss killed on Brutal difficulty across multiple playthroughs. Modded and dedicated server setups tested across full Oakveil playthroughs — including more time in BepInEx logs than I care to admit.</p>
+  </div>
+</div>
+
+<!-- Sources Box -->
+<div class="sources-box">
+  <h4>Sources &amp; References</h4>
+  <ul>
+    <li>Install steps and mod compatibility verified against the current 1.1 Invaders of Oakveil build and the live Thunderstore listing.</li>
+    <li><a href="https://thunderstore.io/c/v-rising/" target="_blank" rel="nofollow noopener">Thunderstore — V Rising Mod Database</a></li>
+    <li><a href="https://www.nexusmods.com/vrising" target="_blank" rel="nofollow noopener">Nexus Mods — V Rising</a></li>
+    <li><a href="https://wiki.vrisingmods.com/" target="_blank" rel="nofollow noopener">V Rising Mods Community Wiki</a></li>
+    <li><a href="https://www.gameserverkings.com/knowledge-base/vrising/how-to-install-mods/" target="_blank" rel="nofollow noopener">GameServerKings — How to Install V Rising Mods</a></li>
+    <li><a href="https://hosthavoc.com/en-GB/wiki/game-servers/v-rising/install-mods" target="_blank" rel="nofollow noopener">Host Havoc — Install Mods on Your V Rising Server</a></li>
+    <li><a href="/server/dedicated-server/">V Rising Guides Dedicated Server Guide</a> — for the base server setup BepInEx runs on.</li>
+    <li><a href="/server/settings/">V Rising Guides Server Settings</a> — for admin config and command reference.</li>
+  </ul>
+</div>
+
+<!-- Share Bar -->
+<div class="share-bar">
+  <span>Share this guide:</span>
+  <a href="https://twitter.com/intent/tweet?text=V+Rising+Mods+Guide+—+Best+Mods+%26+How+to+Install&url=https://vrisingguides.com/v-rising-mods/" target="_blank" rel="nofollow noopener" class="share-btn">𝕏 Twitter</a>
+  <a href="https://www.reddit.com/r/vrising/submit?url=https://vrisingguides.com/v-rising-mods/&title=V+Rising+Mods+Guide+—+Best+Mods+%26+How+to+Install" target="_blank" rel="nofollow noopener" class="share-btn">🔗 Reddit</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://vrisingguides.com/v-rising-mods/" target="_blank" rel="nofollow noopener" class="share-btn">📘 Facebook</a>
+</div>
+
+<!-- Feedback -->
+<div class="feedback-box">
+  <p><strong>Was this V Rising mods guide helpful?</strong></p>
+  <div class="feedback-btns">
+    <button class="feedback-btn" id="feedbackYes" onclick="handleFeedback('yes')">👍 Yes</button>
+    <button class="feedback-btn" id="feedbackNo" onclick="handleFeedback('no')">👎 No</button>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <p>V Rising Guides — The independent V Rising resource. Not affiliated with Stunlock Studios.</p>
+  <p style="margin-top:8px">V Rising and all related content are trademarks of Stunlock Studios AB.</p>
+  <p style="margin-top:8px">
+    <a href="/about.html">About</a> &nbsp;|&nbsp;
+    <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+    <a href="/terms.html">Terms of Use</a> &nbsp;|&nbsp;
+    <a href="/contact.html">Contact</a> &nbsp;|&nbsp;
+    <a href="/sitemap.xml">Sitemap</a>
+  </p>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+<script src="/cookie-consent.js"></script>
+<script>
+(function() {
+  var toggle = document.getElementById('themeToggle');
+  var stored = localStorage.getItem('vrising-theme');
+  if (stored) document.documentElement.setAttribute('data-theme', stored);
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = (current === 'dark') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('vrising-theme', next);
+      if (typeof gtag === 'function') {
+        gtag('event', 'theme_toggle', { theme: next });
+      }
+    });
+  }
+  var btn = document.getElementById('backTop');
+  if (btn) {
+    window.addEventListener('scroll', function() {
+      btn.classList.toggle('visible', window.scrollY > 500);
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+})();
+function handleFeedback(type) {
+  document.getElementById('feedbackYes').classList.toggle('voted', type === 'yes');
+  document.getElementById('feedbackNo').classList.toggle('voted', type === 'no');
+  if(window.clarity){window.clarity("event","feedback",type);}
+  var fb = document.querySelector('.feedback-box p');
+  if(fb) fb.innerHTML = '<strong>Thanks! Your feedback helps us improve.</strong>';
+  if (typeof gtag === 'function') {
+    gtag('event', 'feedback', { type: type });
+  }
+}
+</script>
+</body>
+</html>
